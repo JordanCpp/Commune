@@ -1,0 +1,10 @@
+<Text>
+  <Message>
+    <Number>1</Number>
+    <String>Новая игра</String>
+  </Message>
+  <Message>
+    <Number>2</Number>
+    <String>Выход</String>
+  </Message>
+</Text>

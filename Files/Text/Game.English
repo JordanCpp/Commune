@@ -1,0 +1,10 @@
+<Text>
+  <Message>
+    <Number>1</Number>
+    <String>New Game</String>
+  </Message>
+  <Message>
+    <Number>2</Number>
+    <String>Exit</String>
+  </Message>
+</Text>

@@ -1,0 +1,40 @@
+#include "Disciples.h"
+#include "UI/UI.h"
+#include "UI/MainMenu.h"
+#include "UI/Editor.h"
+
+Disciples::Disciples(const std::string& StartPath):
+	_Canvas(Graphics::Point(1024, 768), 30, "Commune Engine!"),
+	_Camera(Graphics::Point(0, 0), Graphics::Point(_Canvas.Width(), _Canvas.Height())),
+	_FontManager(StartPath),
+	_TextManager(&_Canvas, &_FontManager),
+	_Factory(&_Canvas, &_TextManager),
+	_ImageManager(StartPath, &_Canvas, Graphics::Color(255, 0, 255)),
+	_XmlManager(StartPath),
+	_LanguageManager(StartPath, &_XmlManager)
+{
+	_TextManager.Activate("Crosterian.ttf");
+	_LanguageManager.ActivateLang("Russian");
+	_LanguageManager.ActivateFile("Game");
+
+	_Application = _Factory.NewApplication();
+
+	UI::MainMenu* mainMenu = new UI::MainMenu(&_Factory, _Application, &_ImageManager);
+	UI::Editor* editor = new UI::Editor(&_Factory, _Application, &_Camera, new Game::Location(&_Camera, &_ImageManager));
+
+	_Application->Attach(UI::UI::MainMenu, mainMenu);
+	_Application->Attach(UI::UI::Editor, editor);
+
+	_Application->Activate(UI::UI::MainMenu);
+}
+
+void Disciples::Run()
+{
+	SDL_Event report = { 0 };
+
+	while (_Canvas.GetEvent(report))
+	{
+		_Application->Handler(report);
+		_Application->Draw();
+	}
+}
