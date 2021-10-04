@@ -10,7 +10,7 @@ namespace UI
 		{
 			MainMenu,
 			Editor,
-			Setting
+			Settings
 		};
 	};
 }

@@ -61,3 +61,12 @@ Label* Factory::NewLabel(Graphics::Point pos, Graphics::Point size, const std::s
 
 	return ptr;
 }
+
+Window* Factory::NewWindow(Graphics::Point pos, Graphics::Point size)
+{
+	Window* ptr = new Window(_Canvas, _TextManager, pos, size);
+		
+	_Widgets.push_back(ptr);
+
+	return ptr;
+}

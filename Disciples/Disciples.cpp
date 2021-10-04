@@ -2,6 +2,7 @@
 #include "UI/UI.h"
 #include "UI/MainMenu.h"
 #include "UI/Editor.h"
+#include "UI/Settings.h"
 
 Disciples::Disciples(const std::string& StartPath):
 	_Canvas(Graphics::Point(1024, 768), 30, "Commune Engine!"),
@@ -21,9 +22,11 @@ Disciples::Disciples(const std::string& StartPath):
 
 	UI::MainMenu* mainMenu = new UI::MainMenu(&_Factory, _Application, &_ImageManager);
 	UI::Editor* editor = new UI::Editor(&_Factory, _Application, &_Camera, new Game::Location(&_Camera, &_ImageManager));
+	UI::Settings* settings = new UI::Settings(&_Factory);
 
 	_Application->Attach(UI::UI::MainMenu, mainMenu);
 	_Application->Attach(UI::UI::Editor, editor);
+	_Application->Attach(UI::UI::Settings, settings);
 
 	_Application->Activate(UI::UI::MainMenu);
 }

@@ -198,6 +198,8 @@
     <ClCompile Include="Engine\GUI\Form.cpp" />
     <ClCompile Include="Disciples\UI\MainMenu.cpp" />
     <ClCompile Include="Disciples\UI\UI.cpp" />
+    <ClCompile Include="Engine\GUI\Window.cpp" />
+    <ClCompile Include="Disciples\UI\Settings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Disciples\UI\Editor.h" />
@@ -238,6 +240,8 @@
     <ClInclude Include="Engine\GUI\Form.h" />
     <ClInclude Include="Disciples\UI\MainMenu.h" />
     <ClInclude Include="Disciples\UI\UI.h" />
+    <ClInclude Include="Engine\GUI\Window.h" />
+    <ClInclude Include="Disciples\UI\Settings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype-6.dll" />

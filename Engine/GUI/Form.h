@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI2_Form_h_
-#define _Engine_GUI2_Form_h_
+#ifndef _Engine_GUI_Form_h_
+#define _Engine_GUI_Form_h_
 
 #include "Widget.h"
 

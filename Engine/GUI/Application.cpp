@@ -10,6 +10,14 @@ Application::Application(Graphics::Canvas* CanvasSource):
 {
 }
 
+Application::~Application()
+{
+	for (auto i = _Forms.begin(); i != _Forms.end(); i++)
+	{
+		delete i->second;
+	}
+}
+
 void Application::Attach(size_t id, Form* form)
 {
 	auto ptr = _Forms.find(id);

@@ -1,12 +1,11 @@
-#ifndef _Engine_GUI2_Factory_h_
-#define _Engine_GUI2_Factory_h_
+#ifndef _Engine_GUI_Factory_h_
+#define _Engine_GUI_Factory_h_
 
-#include "../../Engine/Graphics/Canvas.h"
-#include "../Managers/TextManager.h"
 #include "Application.h"
 #include "Form.h"
 #include "Button.h"
 #include "Label.h"
+#include "Window.h"
 
 namespace GUI
 {
@@ -21,6 +20,7 @@ namespace GUI
 		Form* NewForm();
 		Button* NewButton(Graphics::Point pos, Graphics::Point size, const std::string& caption);
 		Label* NewLabel(Graphics::Point pos, Graphics::Point size, const std::string& caption);
+		Window* NewWindow(Graphics::Point pos, Graphics::Point size);
 	private:
 		Graphics::Canvas* _Canvas;
 		Managers::TextManager* _TextManager;

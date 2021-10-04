@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI2_Button_h_
-#define _Engine_GUI2_Button_h_
+#ifndef _Engine_GUI_Button_h_
+#define _Engine_GUI_Button_h_
 
 #include "Widget.h"
 #include "../Managers/TextManager.h"

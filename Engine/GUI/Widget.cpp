@@ -3,6 +3,7 @@
 using namespace GUI;
 
 Widget::Widget(Graphics::Canvas* canvas, Graphics::Point pos, Graphics::Point size):
+	_Visible(true),
 	Click(nullptr),
 	_State(Normal),
 	_Parent(nullptr),
@@ -13,6 +14,16 @@ Widget::Widget(Graphics::Canvas* canvas, Graphics::Point pos, Graphics::Point si
 
 Widget::~Widget()
 {
+}
+
+void GUI::Widget::On()
+{
+	_Visible = true;
+}
+
+void GUI::Widget::Off()
+{
+	_Visible = false;
 }
 
 Graphics::Canvas* Widget::View()

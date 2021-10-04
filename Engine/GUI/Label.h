@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI2_Label_h_
-#define _Engine_GUI2_Label_h_
+#ifndef _Engine_GUI_Label_h_
+#define _Engine_GUI_Label_h_
 
 #include "Widget.h"
 #include "../Managers/TextManager.h"
