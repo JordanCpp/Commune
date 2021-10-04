@@ -2,9 +2,10 @@
 
 using namespace GUI;
 
-Factory::Factory(Graphics::Canvas* canvas, Managers::TextManager* text):
+Factory::Factory(Graphics::Canvas* canvas, Managers::TextManager* text, Managers::LanguageManager* language):
 	_Canvas(canvas),
-	_TextManager(text)
+	_TextManager(text),
+	_LanguageManager(language)
 {
 }
 
@@ -24,6 +25,11 @@ Graphics::Canvas* GUI::Factory::View()
 Managers::TextManager* GUI::Factory::Text()
 {
 	return _TextManager;
+}
+
+Managers::LanguageManager* GUI::Factory::Language()
+{
+	return _LanguageManager;
 }
 
 Application* GUI::Factory::NewApplication()

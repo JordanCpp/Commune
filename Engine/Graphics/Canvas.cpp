@@ -87,6 +87,11 @@ bool Canvas::GetEvent(SDL_Event & Dest)
     return _Running;
 }
 
+void Graphics::Canvas::StopEvent()
+{
+    _Running = false;
+}
+
 SDL_Renderer * Canvas::Render()
 {
     return _Render;

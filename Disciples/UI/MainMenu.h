@@ -12,7 +12,9 @@ namespace UI
 		MainMenu(GUI::Factory* factory, GUI::Application* application, Managers::ImageManager* images);
 		void Draw();
 		void EditorOn();
+		void ExitOn();
 	private:
+		GUI::Factory* _Factory;
 		GUI::Application* _Application;
 		Graphics::Image* _Screen;
 	};

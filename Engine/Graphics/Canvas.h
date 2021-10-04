@@ -17,6 +17,7 @@ namespace Graphics
         size_t Width();
         size_t Height();
         bool GetEvent(SDL_Event& Dest);
+        void StopEvent();
         SDL_Renderer* Render();
         SDL_Window* Window();
         void FillRect(Rect& Rt, Color Cr);

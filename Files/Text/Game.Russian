@@ -5,6 +5,14 @@
   </Message>
   <Message>
     <Number>2</Number>
+    <String>Настройки</String>
+  </Message>
+  <Message>
+    <Number>3</Number>
+    <String>Редактор</String>
+  </Message>
+  <Message>
+    <Number>4</Number>
     <String>Выход</String>
   </Message>
 </Text>
