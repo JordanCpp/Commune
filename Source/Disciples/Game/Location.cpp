@@ -70,6 +70,14 @@ Graphics::Point Location::IndexToPoint(size_t index)
 	return pt;
 }
 
+Graphics::Point Location::PosToIndex(Graphics::Point pos)
+{
+	size_t a = (pos.PosX() - _Camera->PosX()) / Width() + (pos.PosY() - _Camera->PosY()) / Height();
+	size_t b = (pos.PosY() - _Camera->PosY()) / Height() - (pos.PosX() - _Camera->PosX()) / Width();
+
+	return Graphics::Point(a, b);
+}
+
 void Location::Draw()
 {
 	Graphics::Point scale = Scale(64, 32);

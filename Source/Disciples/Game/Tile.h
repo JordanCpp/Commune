@@ -7,12 +7,13 @@ namespace Game
 {
 	class Tile
 	{
+	public:
 		enum
 		{
 			DefaultWidth = 64,
 			DefaultHeight = 32
 		};
-	public:
+
 		size_t Width();
 		size_t Height();
 	private:

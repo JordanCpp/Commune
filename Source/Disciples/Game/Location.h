@@ -30,6 +30,7 @@ namespace Game
 		Graphics::Point IsometricToCartesian(Graphics::Point pt);
 		size_t PointToIndex(Graphics::Point pt);
 		Graphics::Point IndexToPoint(size_t index);
+		Graphics::Point PosToIndex(Graphics::Point pos);
 		void Draw();
 	private:
 		Graphics::Camera* _Camera;

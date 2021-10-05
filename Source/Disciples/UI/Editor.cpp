@@ -23,6 +23,7 @@ Editor::Editor(GUI::Factory* factory, GUI::Application* application, Graphics::C
 	this->Keyboard = std::bind(&Editor::KeyboardEvent, this, std::placeholders::_1);
 	scaleInc->Click = std::bind(&Editor::ScaleInc, this);
 	scaleDec->Click = std::bind(&Editor::ScaleDec, this);
+	this->Click = std::bind(&Editor::ClickOn, this, std::placeholders::_1);
 }
 
 void Editor::Draw()
@@ -37,17 +38,19 @@ void Editor::Draw()
 
 void Editor::KeyboardEvent(size_t key)
 {
+	size_t step = Game::Tile::DefaultWidth * 5;
+
 	if (key == SDLK_d)
-		_Camera->PosX(_Camera->PosX() - 64);
+		_Camera->PosX(_Camera->PosX() - step);
 
 	if (key == SDLK_a)
-		_Camera->PosX(_Camera->PosX() + 64);
+		_Camera->PosX(_Camera->PosX() + step);
 
 	if (key == SDLK_w)
-		_Camera->PosY(_Camera->PosY() + 64);
+		_Camera->PosY(_Camera->PosY() + step);
 
 	if (key == SDLK_s)
-		_Camera->PosY(_Camera->PosY() - 64);
+		_Camera->PosY(_Camera->PosY() - step);
 
 	if (key == SDLK_1)
 		_Location->Scale(_Location->Scale() + 25);
@@ -67,4 +70,13 @@ void Editor::ScaleInc()
 void Editor::ScaleDec()
 {
 	_Location->Scale(_Location->Scale() - 25);
+}
+
+void Editor::ClickOn(Graphics::Point pos)
+{
+	printf("pos: %d,%d\n", pos.PosX(), pos.PosY());
+
+	Graphics::Point index(_Location->PosToIndex(pos));
+
+	printf("index: %d,%d\n", index.PosX(), index.PosY());
 }

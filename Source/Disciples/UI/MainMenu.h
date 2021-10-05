@@ -11,9 +11,9 @@ namespace UI
 	public:
 		MainMenu(GUI::Factory* factory, GUI::Application* application, Managers::ImageManager* images);
 		void Draw();
-		void EditorOn();
-		void ExitOn();
-		void SettingsOn();
+		void EditorOn(Graphics::Point pos);
+		void ExitOn(Graphics::Point pos);
+		void SettingsOn(Graphics::Point pos);
 	private:
 		GUI::Factory* _Factory;
 		GUI::Application* _Application;

@@ -33,9 +33,9 @@ MainMenu::MainMenu(GUI::Factory* factory, GUI::Application* application, Manager
 	this->Attach(editor);
 	this->Attach(exit);
 
-	editor->Click = std::bind(&MainMenu::EditorOn, this);
-	exit->Click = std::bind(&MainMenu::ExitOn, this);
-	settings->Click = std::bind(&MainMenu::SettingsOn, this);
+	editor->Click = std::bind(&MainMenu::EditorOn, this, std::placeholders::_1);
+	exit->Click = std::bind(&MainMenu::ExitOn, this, std::placeholders::_1);
+	settings->Click = std::bind(&MainMenu::SettingsOn, this, std::placeholders::_1);
 
 	_Screen = images->GetImage("Images\\", "MainMenu.jpeg");
 }
@@ -51,17 +51,17 @@ void MainMenu::Draw()
 	}
 }
 
-void MainMenu::EditorOn()
+void MainMenu::EditorOn(Graphics::Point pos)
 {
 	_Application->Activate(UI::UI::Editor);
 }
 
-void MainMenu::ExitOn()
+void MainMenu::ExitOn(Graphics::Point pos)
 {
 	View()->StopEvent();
 }
 
-void MainMenu::SettingsOn()
+void MainMenu::SettingsOn(Graphics::Point pos)
 {
 	_Application->Activate(UI::UI::Settings);
 }

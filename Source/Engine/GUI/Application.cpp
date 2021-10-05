@@ -80,7 +80,14 @@ void Application::Handler(SDL_Event& report)
 
 			if (_Current->Click != nullptr)
 			{
-				_Current->Click();
+				_Current->Click(Graphics::Point(x, y));
+			}
+		}
+		else
+		{
+			if (_Form->Click != nullptr)
+			{
+				_Form->Click(Graphics::Point(x, y));
 			}
 		}
 	}

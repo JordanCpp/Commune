@@ -21,7 +21,7 @@ namespace GUI
 		void On();
 		void Off();
 		virtual void Draw() = 0;
-		std::function<void()> Click;
+		std::function<void(Graphics::Point pos)> Click;
 		std::function<void(size_t key)> Keyboard;
 		Graphics::Canvas* View();
 		size_t State();
