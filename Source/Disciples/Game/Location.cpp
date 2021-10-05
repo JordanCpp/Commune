@@ -7,7 +7,7 @@ Location::Location(Graphics::Camera* CameraSource, Managers::ImageManager* Image
 	_ImageManager(ImageManagerSource),
 	_Width(0),
 	_Height(0),
-	_Scaling(100)
+	_Scaling(ScaleDefault)
 {
 }
 

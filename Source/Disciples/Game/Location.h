@@ -13,6 +13,13 @@ namespace Game
 	class Location
 	{
 	public:
+		enum
+		{
+			ScaleMin = 25,
+			ScaleMax = 300,
+			ScaleStep = 25,
+			ScaleDefault = 100
+		};
 		Location(Graphics::Camera* CameraSource, Managers::ImageManager* ImageManagerSource);
 		size_t Scale();
 		void Scale(size_t percent);
