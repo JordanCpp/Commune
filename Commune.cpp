@@ -1,8 +1,4 @@
-#include "Disciples/Disciples.h"
-#include "Engine/GUI/Factory.h"
-#include "Disciples/UI/UI.h"
-#include "Disciples/UI/MainMenu.h"
-#include "Disciples/UI/Editor.h"
+#include "Source/Disciples/Disciples.h"
 
 struct IndexInfo 
 {

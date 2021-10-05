@@ -18,252 +18,252 @@
     <ClCompile Include="Commune.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Game\Location.cpp">
+    <ClCompile Include="Source\Disciples\Game\Location.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Game\Tile.cpp">
+    <ClCompile Include="Source\Disciples\Game\Tile.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Gameplay\Immunity.cpp">
+    <ClCompile Include="Source\Disciples\Gameplay\Immunity.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Gameplay\Race.cpp">
+    <ClCompile Include="Source\Disciples\Gameplay\Race.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Gameplay\Stat.cpp">
+    <ClCompile Include="Source\Disciples\Gameplay\Stat.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Gameplay\Unit.cpp">
+    <ClCompile Include="Source\Disciples\Gameplay\Unit.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Gameplay\Ward.cpp">
+    <ClCompile Include="Source\Disciples\Gameplay\Ward.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Common\XmlFile.cpp">
+    <ClCompile Include="Source\Engine\Common\XmlFile.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Common\XmlReader.cpp">
+    <ClCompile Include="Source\Engine\Common\XmlReader.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Common\XmlWriter.cpp">
+    <ClCompile Include="Source\Engine\Common\XmlWriter.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Managers\ImageManager.cpp">
+    <ClCompile Include="Source\Engine\Managers\ImageManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Managers\Manager.cpp">
+    <ClCompile Include="Source\Engine\Managers\Manager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Managers\XmlManager.cpp">
+    <ClCompile Include="Source\Engine\Managers\XmlManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Managers\FontManager.cpp">
+    <ClCompile Include="Source\Engine\Managers\FontManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Managers\TextManager.cpp">
+    <ClCompile Include="Source\Engine\Managers\TextManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Managers\LanguageManager.cpp">
+    <ClCompile Include="Source\Engine\Managers\LanguageManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Disciples.cpp">
+    <ClCompile Include="Source\Disciples\Disciples.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Arcanum\Arcanum.cpp">
+    <ClCompile Include="Source\Arcanum\Arcanum.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Canvas.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Canvas.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Color.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Color.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Font.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Font.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Image.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Image.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Point.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Point.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Rect.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Rect.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Text.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Text.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Formats\FfReader.cpp">
+    <ClCompile Include="Source\Disciples\Formats\FfReader.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Camera.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Camera.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Arcanum\Game\Tile.cpp">
+    <ClCompile Include="Source\Arcanum\Game\Tile.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics\Animation.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Animation.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GUI\Widget.cpp">
+    <ClCompile Include="Source\Engine\GUI\Widget.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GUI\Factory.cpp">
+    <ClCompile Include="Source\Engine\GUI\Factory.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GUI\Form.cpp">
+    <ClCompile Include="Source\Engine\GUI\Form.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GUI\Button.cpp">
+    <ClCompile Include="Source\Engine\GUI\Button.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GUI\Label.cpp">
+    <ClCompile Include="Source\Engine\GUI\Label.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GUI\Application.cpp">
+    <ClCompile Include="Source\Engine\GUI\Application.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\UI\MainMenu.cpp">
+    <ClCompile Include="Source\Disciples\UI\MainMenu.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\UI\UI.cpp">
+    <ClCompile Include="Source\Disciples\UI\UI.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\UI\Editor.cpp">
+    <ClCompile Include="Source\Disciples\UI\Editor.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GUI\Window.cpp">
+    <ClCompile Include="Source\Engine\GUI\Window.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\UI\Settings.cpp">
+    <ClCompile Include="Source\Disciples\UI\Settings.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Disciples\Game\Settings.cpp">
+    <ClCompile Include="Source\Disciples\Game\Settings.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Disciples\Game\Location.h">
+    <ClInclude Include="Source\Disciples\Game\Location.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Game\Tile.h">
+    <ClInclude Include="Source\Disciples\Game\Tile.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Gameplay\Immunity.h">
+    <ClInclude Include="Source\Disciples\Gameplay\Immunity.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Gameplay\Race.h">
+    <ClInclude Include="Source\Disciples\Gameplay\Race.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Gameplay\Stat.h">
+    <ClInclude Include="Source\Disciples\Gameplay\Stat.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Gameplay\Unit.h">
+    <ClInclude Include="Source\Disciples\Gameplay\Unit.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Gameplay\Ward.h">
+    <ClInclude Include="Source\Disciples\Gameplay\Ward.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Common\XmlFile.hpp">
+    <ClInclude Include="Source\Engine\Common\XmlFile.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Common\XmlReader.hpp">
+    <ClInclude Include="Source\Engine\Common\XmlReader.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Common\XmlWriter.hpp">
+    <ClInclude Include="Source\Engine\Common\XmlWriter.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Managers\ImageManager.h">
+    <ClInclude Include="Source\Engine\Managers\ImageManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Managers\Manager.h">
+    <ClInclude Include="Source\Engine\Managers\Manager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Managers\XmlManager.h">
+    <ClInclude Include="Source\Engine\Managers\XmlManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Managers\FontManager.h">
+    <ClInclude Include="Source\Engine\Managers\FontManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Managers\TextManager.h">
+    <ClInclude Include="Source\Engine\Managers\TextManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Managers\LanguageManager.h">
+    <ClInclude Include="Source\Engine\Managers\LanguageManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Disciples.h">
+    <ClInclude Include="Source\Disciples\Disciples.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Arcanum\Arcanum.h">
+    <ClInclude Include="Source\Arcanum\Arcanum.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Canvas.h">
+    <ClInclude Include="Source\Engine\Graphics\Canvas.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Color.h">
+    <ClInclude Include="Source\Engine\Graphics\Color.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Font.h">
+    <ClInclude Include="Source\Engine\Graphics\Font.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Image.h">
+    <ClInclude Include="Source\Engine\Graphics\Image.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Point.h">
+    <ClInclude Include="Source\Engine\Graphics\Point.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Rect.h">
+    <ClInclude Include="Source\Engine\Graphics\Rect.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Text.h">
+    <ClInclude Include="Source\Engine\Graphics\Text.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Formats\FfReader.h">
+    <ClInclude Include="Source\Disciples\Formats\FfReader.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Camera.h">
+    <ClInclude Include="Source\Engine\Graphics\Camera.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Arcanum\Game\Tile.h">
+    <ClInclude Include="Source\Arcanum\Game\Tile.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics\Animation.h">
+    <ClInclude Include="Source\Engine\Graphics\Animation.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GUI\Widget.h">
+    <ClInclude Include="Source\Engine\GUI\Widget.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GUI\Factory.h">
+    <ClInclude Include="Source\Engine\GUI\Factory.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GUI\Form.h">
+    <ClInclude Include="Source\Engine\GUI\Form.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GUI\Button.h">
+    <ClInclude Include="Source\Engine\GUI\Button.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GUI\Label.h">
+    <ClInclude Include="Source\Engine\GUI\Label.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GUI\Application.h">
+    <ClInclude Include="Source\Engine\GUI\Application.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\UI\MainMenu.h">
+    <ClInclude Include="Source\Disciples\UI\MainMenu.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\UI\UI.h">
+    <ClInclude Include="Source\Disciples\UI\UI.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\UI\Editor.h">
+    <ClInclude Include="Source\Disciples\UI\Editor.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GUI\Window.h">
+    <ClInclude Include="Source\Engine\GUI\Window.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\UI\Settings.h">
+    <ClInclude Include="Source\Disciples\UI\Settings.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Disciples\Game\Settings.h">
+    <ClInclude Include="Source\Disciples\Game\Settings.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
