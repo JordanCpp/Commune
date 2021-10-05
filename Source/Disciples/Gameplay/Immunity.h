@@ -1,10 +1,13 @@
 #ifndef _Disciples_Gameplay_Immunity_h_
 #define _Disciples_Gameplay_Immunity_h_
 
-class Immunity
+namespace Gameplay
 {
-public:
-	bool _Value;
-};
+	class Immunity
+	{
+	public:
+		bool _Value;
+	};
+}
 
 #endif

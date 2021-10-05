@@ -163,6 +163,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Disciples\Game\Leader.cpp" />
     <ClCompile Include="Source\Disciples\Game\Settings.cpp" />
     <ClCompile Include="Source\Disciples\UI\Editor.cpp" />
     <ClCompile Include="Source\Engine\GUI\Application.cpp" />
@@ -183,7 +184,7 @@
     <ClCompile Include="Source\Disciples\Gameplay\Immunity.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\Race.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\Stat.cpp" />
-    <ClCompile Include="Source\Disciples\Gameplay\Unit.cpp" />
+    <ClCompile Include="Source\Disciples\Game\Unit.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\Ward.cpp" />
     <ClCompile Include="Source\Disciples\Game\Location.cpp" />
     <ClCompile Include="Source\Disciples\Game\Tile.cpp" />
@@ -205,8 +206,10 @@
     <ClCompile Include="Source\Disciples\UI\UI.cpp" />
     <ClCompile Include="Source\Engine\GUI\Window.cpp" />
     <ClCompile Include="Source\Disciples\UI\Settings.cpp" />
+    <ClCompile Include="Source\Disciples\Gameplay\StatValue.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Disciples\Game\Leader.h" />
     <ClInclude Include="Source\Disciples\Game\Settings.h" />
     <ClInclude Include="Source\Disciples\UI\Editor.h" />
     <ClInclude Include="Source\Engine\GUI\Application.h" />
@@ -226,7 +229,7 @@
     <ClInclude Include="Source\Disciples\Gameplay\Immunity.h" />
     <ClInclude Include="Source\Disciples\Gameplay\Race.h" />
     <ClInclude Include="Source\Disciples\Gameplay\Stat.h" />
-    <ClInclude Include="Source\Disciples\Gameplay\Unit.h" />
+    <ClInclude Include="Source\Disciples\Game\Unit.h" />
     <ClInclude Include="Source\Disciples\Gameplay\Ward.h" />
     <ClInclude Include="Source\Disciples\Game\Location.h" />
     <ClInclude Include="Source\Disciples\Game\Tile.h" />
@@ -248,6 +251,7 @@
     <ClInclude Include="Source\Disciples\UI\UI.h" />
     <ClInclude Include="Source\Engine\GUI\Window.h" />
     <ClInclude Include="Source\Disciples\UI\Settings.h" />
+    <ClInclude Include="Source\Disciples\Gameplay\StatValue.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />

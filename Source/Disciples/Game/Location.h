@@ -7,6 +7,7 @@
 #include "Tile.h"
 #include "../../Engine/Managers/ImageManager.h"
 #include "../../Engine/Graphics/Camera.h"
+#include "Leader.h"
 
 namespace Game
 {
@@ -38,6 +39,7 @@ namespace Game
 		size_t _Width;
 		size_t _Height;
 		std::vector<Tile> _Tiles;
+		std::vector<Leader> _Leaders;
 		size_t _Scaling;
 	};
 }

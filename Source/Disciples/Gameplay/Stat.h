@@ -1,14 +1,17 @@
 #ifndef _Disciples_Gameplay_Stat_h_
 #define _Disciples_Gameplay_Stat_h_
 
-class Stat
+namespace Gameplay
 {
-public:
+	class Stat
+	{
+	public:
 
-private:
-	int _Percent;
-	int _Number;
-	int _Value;
-};
+	private:
+		int _Percent;
+		int _Number;
+		int _Value;
+	};
+}
 
 #endif

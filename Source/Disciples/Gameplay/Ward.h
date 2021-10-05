@@ -3,11 +3,14 @@
 
 #include <cstdint>
 
-class Ward
+namespace Gameplay
 {
-public:
-	uint8_t _Count;
-	bool _Value;
-};
+	class Ward
+	{
+	public:
+		uint8_t _Count;
+		bool _Value;
+	};
+}
 
 #endif

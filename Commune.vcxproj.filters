@@ -33,7 +33,7 @@
     <ClCompile Include="Source\Disciples\Gameplay\Stat.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Disciples\Gameplay\Unit.cpp">
+    <ClCompile Include="Source\Disciples\Game\Unit.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Source\Disciples\Gameplay\Ward.cpp">
@@ -141,6 +141,12 @@
     <ClCompile Include="Source\Disciples\Game\Settings.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Disciples\Game\Leader.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Disciples\Gameplay\StatValue.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Disciples\Game\Location.h">
@@ -158,7 +164,7 @@
     <ClInclude Include="Source\Disciples\Gameplay\Stat.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Disciples\Gameplay\Unit.h">
+    <ClInclude Include="Source\Disciples\Game\Unit.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Source\Disciples\Gameplay\Ward.h">
@@ -264,6 +270,12 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Source\Disciples\Game\Settings.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Disciples\Game\Leader.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Disciples\Gameplay\StatValue.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

@@ -72,15 +72,15 @@ Graphics::Point Location::IndexToPoint(size_t index)
 
 Graphics::Point Location::PosToIndex(Graphics::Point pos)
 {
-	size_t a = (pos.PosX() - _Camera->PosX()) / Width() + (pos.PosY() - _Camera->PosY()) / Height();
-	size_t b = (pos.PosY() - _Camera->PosY()) / Height() - (pos.PosX() - _Camera->PosX()) / Width();
+	size_t a = (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth + (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight;
+	size_t b = (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight - (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth;
 
 	return Graphics::Point(a, b);
 }
 
 void Location::Draw()
 {
-	Graphics::Point scale = Scale(64, 32);
+	Graphics::Point scale = Scale(Tile::DefaultWidth, Tile::DefaultHeight);
 
 	for (size_t k = 0; k < Width() * Height(); k++)
 	{
@@ -96,8 +96,5 @@ void Location::Draw()
 		size_t dy = pt.PosY() + _Camera->PosY();
 
 		_ImageManager->GetImage("Images\\", "Default.png")->Draw(Graphics::Point(dx, dy), Graphics::Point(scale.PosX(), scale.PosY()));
-		
-		//if (k == 63)
-		//_ImageManager->GetImage("Imgs\\IsoCmon\\", "CRYSTALS.PNG")->Draw(Graphics::Point(dx, dy), Graphics::Point(scale.PosX(), scale.PosY()));
 	}
 }
