@@ -9,6 +9,7 @@
 #include "../Engine/Managers/LanguageManager.h"
 #include "../Engine/Graphics/Camera.h"
 #include "../Engine/GUI/Factory.h"
+#include "Game/Settings.h"
 
 class Disciples
 {
@@ -16,6 +17,7 @@ public:
 	Disciples(const std::string& StartPath);
 	void Run();
 private:
+	Game::Settings _Settings;
 	Graphics::Canvas _Canvas;
 	Graphics::Camera _Camera;
 	Managers::FontManager _FontManager;

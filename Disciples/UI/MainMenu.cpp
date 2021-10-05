@@ -35,6 +35,7 @@ MainMenu::MainMenu(GUI::Factory* factory, GUI::Application* application, Manager
 
 	editor->Click = std::bind(&MainMenu::EditorOn, this);
 	exit->Click = std::bind(&MainMenu::ExitOn, this);
+	settings->Click = std::bind(&MainMenu::SettingsOn, this);
 
 	_Screen = images->GetImage("Images\\", "MainMenu.jpeg");
 }
@@ -58,4 +59,9 @@ void MainMenu::EditorOn()
 void MainMenu::ExitOn()
 {
 	View()->StopEvent();
+}
+
+void MainMenu::SettingsOn()
+{
+	_Application->Activate(UI::UI::Settings);
 }

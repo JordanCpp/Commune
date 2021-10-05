@@ -5,13 +5,14 @@
 #include "UI/Settings.h"
 
 Disciples::Disciples(const std::string& StartPath):
-	_Canvas(Graphics::Point(1366, 768), 30, "Commune Engine!"),
+	_Settings(StartPath),
+	_Canvas(_Settings.WindowSize(), _Settings.Fps(), "Commune Engine!"),
 	_Camera(Graphics::Point(0, 0), Graphics::Point(_Canvas.Width(), _Canvas.Height())),
-	_FontManager(StartPath),
+	_FontManager(_Settings.Path()),
 	_TextManager(&_Canvas, &_FontManager),
-	_ImageManager(StartPath, &_Canvas, Graphics::Color(255, 0, 255)),
-	_XmlManager(StartPath),
-	_LanguageManager(StartPath, &_XmlManager),
+	_ImageManager(_Settings.Path(), &_Canvas, Graphics::Color(255, 0, 255)),
+	_XmlManager(_Settings.Path()),
+	_LanguageManager(_Settings.Path(), &_XmlManager),
 	_Factory(&_Canvas, &_TextManager, &_LanguageManager)
 {
 	_TextManager.Activate("Crosterian.ttf");

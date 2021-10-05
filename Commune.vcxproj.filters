@@ -138,6 +138,9 @@
     <ClCompile Include="Disciples\UI\Settings.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Disciples\Game\Settings.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Disciples\Game\Location.h">
@@ -260,6 +263,9 @@
     <ClInclude Include="Disciples\UI\Settings.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Disciples\Game\Settings.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype-6.dll" />
@@ -272,5 +278,8 @@
     <None Include="SDL2_ttf.dll" />
     <None Include="zlib1.dll" />
     <None Include="Commune.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Config.xml" />
   </ItemGroup>
 </Project>

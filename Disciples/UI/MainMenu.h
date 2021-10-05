@@ -13,6 +13,7 @@ namespace UI
 		void Draw();
 		void EditorOn();
 		void ExitOn();
+		void SettingsOn();
 	private:
 		GUI::Factory* _Factory;
 		GUI::Application* _Application;

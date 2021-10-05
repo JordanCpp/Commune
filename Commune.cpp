@@ -136,7 +136,7 @@ private:
 
 int main(int argc, char* argv[])
 {
-	Disciples disciples("Files\\");
+	Disciples disciples("Config.xml");
 	disciples.Run();
 
 	//FrameInfo info;
