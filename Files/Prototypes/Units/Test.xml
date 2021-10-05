@@ -1,3 +1,30 @@
 <Unit>
-  <Stat></Stat>
+	<Stats>
+		<Level>1</Level>
+		<XP>80</XP>
+		<HP>100</HP>
+		<Armor>0</Armor>
+		<Initiative>65</Initiative>
+		<Reach>Near</Reach>
+		<Targets>1</Targets>
+		<Immunities>
+			<Mind>1</Mind>
+		</Immunities>
+		<Wards>
+			<Fire>1</Fire>
+		</Wards>
+		<Attacks>
+			<Count>1</Count>
+			<First>
+				<Source>Weapon</Source>
+				<Chance>90</Chance>
+				<Damage>175</Damage>
+			</First>
+			<Effect>
+				<Source>Poison</Source>
+				<Chance>90</Chance>
+				<Damage>50</Damage>		
+			</Effect>
+		</Attacks>
+	</Stats>
 </Unit>

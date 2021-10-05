@@ -267,6 +267,7 @@
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Config.xml" />
+    <Xml Include="Files\Prototypes\Units\Test.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

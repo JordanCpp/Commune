@@ -72,12 +72,34 @@ Graphics::Point Location::IndexToPoint(size_t index)
 
 Graphics::Point Location::PosToIndex(Graphics::Point pos)
 {
-	size_t a = (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth + (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight;
-	size_t b = (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight - (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth;
+	float a = (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth + (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight;
+	float b = (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight - (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth;
 
 	return Graphics::Point(a, b);
 }
 
+void Location::Draw()
+{
+	Graphics::Point scale = Scale(Tile::DefaultWidth, Tile::DefaultHeight);
+
+	for (size_t rows = 0; rows < Width(); rows++)
+	{
+		for (size_t cols = 0; cols < Height(); cols++)
+		{
+			size_t x = cols * scale.PosX() / 2;
+			size_t y = rows * scale.PosY();
+
+			Graphics::Point pt = CartesianToIsometric(Graphics::Point(x, y));
+
+			size_t dx = pt.PosX() + _Camera->PosX();
+			size_t dy = pt.PosY() + _Camera->PosY();
+
+			_ImageManager->GetImage("Images\\", "Default.png")->Draw(Graphics::Point(dx, dy), Graphics::Point(scale.PosX(), scale.PosY()));
+		}
+	}
+}
+
+/*
 void Location::Draw()
 {
 	Graphics::Point scale = Scale(Tile::DefaultWidth, Tile::DefaultHeight);
@@ -98,3 +120,4 @@ void Location::Draw()
 		_ImageManager->GetImage("Images\\", "Default.png")->Draw(Graphics::Point(dx, dy), Graphics::Point(scale.PosX(), scale.PosY()));
 	}
 }
+*/

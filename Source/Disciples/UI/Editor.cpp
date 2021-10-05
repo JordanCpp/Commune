@@ -79,4 +79,5 @@ void Editor::ClickOn(Graphics::Point pos)
 	Graphics::Point index(_Location->PosToIndex(pos));
 
 	printf("index: %d,%d\n", index.PosX(), index.PosY());
+	printf("Camera: %d,%d\n", _Camera->PosX(), _Camera->PosY());
 }
