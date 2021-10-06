@@ -163,6 +163,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Disciples\Tests\All.cpp" />
     <ClCompile Include="Source\Disciples\Game\Leader.cpp" />
     <ClCompile Include="Source\Disciples\Game\Settings.cpp" />
     <ClCompile Include="Source\Disciples\UI\Editor.cpp" />
@@ -207,8 +208,11 @@
     <ClCompile Include="Source\Engine\GUI\Window.cpp" />
     <ClCompile Include="Source\Disciples\UI\Settings.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\StatValue.cpp" />
+    <ClCompile Include="Source\Disciples\Tests\StatValue.cpp" />
+    <ClCompile Include="Source\Disciples\Tests\Stat.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Disciples\Tests\All.h" />
     <ClInclude Include="Source\Disciples\Game\Leader.h" />
     <ClInclude Include="Source\Disciples\Game\Settings.h" />
     <ClInclude Include="Source\Disciples\UI\Editor.h" />
@@ -252,6 +256,8 @@
     <ClInclude Include="Source\Engine\GUI\Window.h" />
     <ClInclude Include="Source\Disciples\UI\Settings.h" />
     <ClInclude Include="Source\Disciples\Gameplay\StatValue.h" />
+    <ClInclude Include="Source\Disciples\Tests\StatValue.h" />
+    <ClInclude Include="Source\Disciples\Tests\Stat.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />

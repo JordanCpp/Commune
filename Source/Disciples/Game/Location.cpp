@@ -75,7 +75,7 @@ Graphics::Point Location::PosToIndex(Graphics::Point pos)
 	float a = (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth + (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight;
 	float b = (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight - (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth;
 
-	return Graphics::Point(a, b);
+	return Graphics::Point((size_t)a, (size_t)b);
 }
 
 void Location::Draw()

@@ -5,6 +5,7 @@ namespace Gameplay
 {
 	class Race
 	{
+	public:
 		enum
 		{
 			ElvenAlliance,

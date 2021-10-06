@@ -10,6 +10,7 @@
 #include "../Engine/Graphics/Camera.h"
 #include "../Engine/GUI/Factory.h"
 #include "Game/Settings.h"
+#include "Tests/All.h"
 
 class Disciples
 {
@@ -27,6 +28,7 @@ private:
 	Managers::LanguageManager _LanguageManager;
 	GUI::Factory _Factory;
 	GUI::Application* _Application;
+	Tests::All _All;
 };
 
 #endif

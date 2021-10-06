@@ -9,6 +9,7 @@ namespace Gameplay
 	class StatValue
 	{
 	public:
+		StatValue();
 		int Percent();
 		int Number();
 		int Value();

@@ -1,44 +1,59 @@
 #include "Stat.h"
 
-int Gameplay::Stat::GetValue(size_t index)
+using namespace Gameplay;
+
+int Stat::Value(size_t index)
 {
     return _Stats.at(index).Value();
 }
 
-int Gameplay::Stat::GetNumber(size_t index)
+int Stat::Number(size_t index)
 {
     return _Stats.at(index).Number();
 }
 
-int Gameplay::Stat::GetPercent(size_t index)
+int Stat::Percent(size_t index)
 {
     return _Stats.at(index).Percent();
 }
 
-int Gameplay::Stat::GetStat(size_t index)
+void Stat::Value(size_t index, int value)
+{
+    return _Stats.at(index).Value(value);
+}
+void Stat::Number(size_t index, int value)
+{
+    return _Stats.at(index).Number(value);
+}
+void Stat::Percent(size_t index, int value)
+{
+    return _Stats.at(index).Percent(value);
+}
+
+int Stat::GetStat(size_t index)
 {
     int result = 0;
-    int number = GetNumber(index);
-    int percent = GetPercent(index);
-    int value = GetValue(index);
+    int number = Number(index);
+    int percent = Percent(index);
+    int value = Value(index);
 
     if (number > 0)
     {
-        result += value + number;
+        result += number;
     }
     else if (number < 0)
     {
-        result += value - number;
+        result -= number;
     }
 
     if (percent > 0)
     {
-        result += value + (value / 100 * percent);
+        result += (int)floor(double(value) / double(100) * percent);
     }
     else if (percent < 0)
     {
-        result += value - (value / 100 * percent);
+        result -= (int)floor(double(value) / double(100) * percent);
     }
 
-    return result;
+    return result + value;
 }
