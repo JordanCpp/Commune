@@ -3,17 +3,13 @@
 
 #include <cstdint>
 #include <array>
+#include "Source.h"
 
 namespace Gameplay
 {
-	class Ward
+	class Ward: public Source
 	{
 	public:
-		enum
-		{
-			Limit
-		};
-
 		uint8_t Get(size_t index);
 		void Set(size_t index, uint8_t value);
 	private:

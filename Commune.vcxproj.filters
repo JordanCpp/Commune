@@ -156,6 +156,15 @@
     <ClCompile Include="Source\Disciples\Tests\All.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Disciples\Gameplay\Attack.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Disciples\Gameplay\Source.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Disciples\Gameplay\AttackValue.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Disciples\Game\Location.h">
@@ -294,6 +303,15 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Source\Disciples\Tests\All.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Disciples\Gameplay\Attack.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Disciples\Gameplay\Source.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Disciples\Gameplay\AttackValue.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
