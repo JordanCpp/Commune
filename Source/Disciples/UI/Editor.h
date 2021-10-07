@@ -15,6 +15,7 @@ namespace UI
 		void KeyboardEvent(size_t key);
 		void ScaleInc();
 		void ScaleDec();
+		void ScaleDef();
 		void ClickOn(Graphics::Point pos);
 	private:
 		GUI::Factory* _Factory;

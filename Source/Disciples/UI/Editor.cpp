@@ -12,17 +12,25 @@ Editor::Editor(GUI::Factory* factory, GUI::Application* application, Graphics::C
 	size_t s = 5;
 	size_t x = s;
 	size_t y = s;
-	Graphics::Point sz(35, 35);
+	Graphics::Point sz(50, 35);
 
 	GUI::Button* scaleInc = factory->NewButton(Graphics::Point(x, y), sz, "+");
-	GUI::Button* scaleDec = factory->NewButton(Graphics::Point(x + scaleInc->Area().Width() + s, y), sz, "-");
+	x = x + sz.PosX() + s;
+
+	GUI::Button* scaleDec = factory->NewButton(Graphics::Point(x, y), sz, "-");
+	x = x + sz.PosX() + s;
+
+	GUI::Button* scaleDef = factory->NewButton(Graphics::Point(x, y), sz, "100%");
+	x = x + sz.PosX() + s;
 
 	this->Attach(scaleInc);
 	this->Attach(scaleDec);
+	this->Attach(scaleDef);
 
 	this->Keyboard = std::bind(&Editor::KeyboardEvent, this, std::placeholders::_1);
 	scaleInc->Click = std::bind(&Editor::ScaleInc, this);
 	scaleDec->Click = std::bind(&Editor::ScaleDec, this);
+	scaleDef->Click = std::bind(&Editor::ScaleDef, this);
 	this->Click = std::bind(&Editor::ClickOn, this, std::placeholders::_1);
 }
 
@@ -51,25 +59,21 @@ void Editor::KeyboardEvent(size_t key)
 
 	if (key == SDLK_s)
 		_Camera->PosY(_Camera->PosY() - step);
-
-	if (key == SDLK_1)
-		_Location->Scale(_Location->Scale() + 25);
-
-	if (key == SDLK_2)
-		_Location->Scale(_Location->Scale() - 25);
-
-	if (key == SDLK_3)
-		_Location->Scale(100);
 }
 
 void Editor::ScaleInc()
 {
-	_Location->Scale(_Location->Scale() + 25);
+	_Location->Scale(_Location->Scale() + Game::Location::ScaleStep);
 }
 
 void Editor::ScaleDec()
 {
-	_Location->Scale(_Location->Scale() - 25);
+	_Location->Scale(_Location->Scale() - Game::Location::ScaleStep);
+}
+
+void Editor::ScaleDef()
+{
+	_Location->Scale(Game::Location::ScaleDefault);
 }
 
 void Editor::ClickOn(Graphics::Point pos)
