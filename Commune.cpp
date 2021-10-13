@@ -1,4 +1,5 @@
 #include "Source/Disciples/Disciples.h"
+#include "Source/Disciples/Formats/FfReader.h"
 
 struct IndexInfo 
 {
@@ -132,17 +133,12 @@ private:
 
 int main(int argc, char* argv[])
 {
-	Disciples disciples("Config.xml");
-	disciples.Run();
+	Formats::FfReader reader;
+	reader.LoadFiles("d:\\Games\\Disciples II\\Imgs\\City.ff");
+	reader.Print();
 
-	//FrameInfo info;
-
-	//info.LoadIndex("d:\\DisNew\\Imgs\\BatItems\\-INDEX.OPT");
-	//info.LoadAnims("d:\\DisNew\\Imgs\\BatItems\\-ANIMS.OPT");
-	//info.LoadImages("d:\\DisNew\\Imgs\\BatItems\\-IMAGES.OPT");
-
-	//info.PrintI();
-	//info.PrintA();
+	//Disciples disciples("Config.xml");
+	//disciples.Run();
 
 	return 0;
 }

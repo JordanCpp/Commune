@@ -76,3 +76,12 @@ Window* Factory::NewWindow(Graphics::Point pos, Graphics::Point size)
 
 	return ptr;
 }
+
+Picture* Factory::NewPicture(Graphics::Point pos, Graphics::Point size, Graphics::Image* image)
+{
+	Picture* ptr = new Picture(_Canvas, image, pos, size);
+
+	_Widgets.push_back(ptr);
+
+	return ptr;
+}

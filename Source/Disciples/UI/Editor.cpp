@@ -2,9 +2,10 @@
  
 using namespace UI;
 
-Editor::Editor(GUI::Factory* factory, GUI::Application* application, Graphics::Camera* camera, Game::Location* location):
+Editor::Editor(GUI::Factory* factory, Managers::ImageManager* imageManager, GUI::Application* application, Graphics::Camera* camera, Game::Location* location):
 	Form(factory->View()),
 	_Factory(factory),
+	_ImageManager(imageManager),
 	_Application(application),
 	_Camera(camera),
 	_Location(location)
@@ -23,14 +24,28 @@ Editor::Editor(GUI::Factory* factory, GUI::Application* application, Graphics::C
 	GUI::Button* scaleDef = factory->NewButton(Graphics::Point(x, y), sz, "100%");
 	x = x + sz.PosX() + s;
 
+	x = s;
+	y = y + sz.PosY() + s;
+	GUI::Button* select = factory->NewButton(Graphics::Point(x, y), sz, "N");
+
+	win = factory->NewWindow(Graphics::Point(60, 55), Graphics::Point(640, 480));
+
+	Graphics::Image* img = _ImageManager->GetImage("Images\\", "G000UU0007FACEB.PNG");
+	GUI::Picture* pic = factory->NewPicture(Graphics::Point(60, 55), Graphics::Point(100, 100), img);
+
 	this->Attach(scaleInc);
 	this->Attach(scaleDec);
 	this->Attach(scaleDef);
+	this->Attach(select);
+	this->Attach(win);
+
+	win->Attach(pic);
 
 	this->Keyboard = std::bind(&Editor::KeyboardEvent, this, std::placeholders::_1);
 	scaleInc->Click = std::bind(&Editor::ScaleInc, this);
 	scaleDec->Click = std::bind(&Editor::ScaleDec, this);
 	scaleDef->Click = std::bind(&Editor::ScaleDef, this);
+	select->Click = std::bind(&Editor::Select, this);
 	this->Click = std::bind(&Editor::ClickOn, this, std::placeholders::_1);
 }
 
@@ -40,7 +55,10 @@ void Editor::Draw()
 
 	for (size_t i = 0; i < Widgets().size(); i++)
 	{
-		Widgets()[i]->Draw();
+		if (Widgets()[i]->Visible())
+		{
+			Widgets()[i]->Draw();
+		}
 	}
 }
 
@@ -74,6 +92,14 @@ void Editor::ScaleDec()
 void Editor::ScaleDef()
 {
 	_Location->Scale(Game::Location::ScaleDefault);
+}
+
+void Editor::Select()
+{
+	if (win->Visible())
+		win->Off();
+	else
+		win->On();
 }
 
 void Editor::ClickOn(Graphics::Point pos)

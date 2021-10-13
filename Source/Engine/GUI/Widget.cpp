@@ -26,6 +26,11 @@ void GUI::Widget::Off()
 	_Visible = false;
 }
 
+bool Widget::Visible()
+{
+	return _Visible;
+}
+
 Graphics::Canvas* Widget::View()
 {
 	return _Canvas;

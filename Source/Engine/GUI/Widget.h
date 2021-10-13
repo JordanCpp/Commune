@@ -20,6 +20,7 @@ namespace GUI
 		virtual ~Widget();
 		void On();
 		void Off();
+		bool Visible();
 		virtual void Draw() = 0;
 		std::function<void(Graphics::Point pos)> Click;
 		std::function<void(size_t key)> Keyboard;

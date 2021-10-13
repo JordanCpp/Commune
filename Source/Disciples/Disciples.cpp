@@ -20,7 +20,7 @@ Disciples::Disciples(const std::string& StartPath):
 	_Application = _Factory.NewApplication();
 
 	UI::MainMenu* mainMenu = new UI::MainMenu(&_Factory, _Application, &_ImageManager);
-	UI::Editor* editor = new UI::Editor(&_Factory, _Application, &_Camera, new Game::Location(&_Camera, &_ImageManager));
+	UI::Editor* editor = new UI::Editor(&_Factory, &_ImageManager, _Application, &_Camera, new Game::Location(&_Camera, &_ImageManager));
 	UI::Settings* settings = new UI::Settings(&_Factory);
 
 	_Application->Attach(UI::UI::MainMenu, mainMenu);

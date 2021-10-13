@@ -7,6 +7,7 @@
 #include "Button.h"
 #include "Label.h"
 #include "Window.h"
+#include "Picture.h"
 
 namespace GUI
 {
@@ -23,6 +24,7 @@ namespace GUI
 		Button* NewButton(Graphics::Point pos, Graphics::Point size, const std::string& caption);
 		Label* NewLabel(Graphics::Point pos, Graphics::Point size, const std::string& caption);
 		Window* NewWindow(Graphics::Point pos, Graphics::Point size);
+		Picture* NewPicture(Graphics::Point pos, Graphics::Point size, Graphics::Image* image);
 	private:
 		Graphics::Canvas* _Canvas;
 		Managers::TextManager* _TextManager;

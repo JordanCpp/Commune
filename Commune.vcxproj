@@ -163,6 +163,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Engine\GUI\Picture.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\AttackValue.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\Source.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\Attack.cpp" />
@@ -215,6 +216,7 @@
     <ClCompile Include="Source\Disciples\Tests\Stat.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Engine\GUI\Picture.h" />
     <ClInclude Include="Source\Disciples\Gameplay\AttackValue.h" />
     <ClInclude Include="Source\Disciples\Gameplay\Source.h" />
     <ClInclude Include="Source\Disciples\Gameplay\Attack.h" />
