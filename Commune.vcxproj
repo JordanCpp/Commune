@@ -163,6 +163,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Fallout\Execute.cpp" />
     <ClCompile Include="Source\Engine\GUI\Picture.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\AttackValue.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\Source.cpp" />
@@ -214,8 +215,10 @@
     <ClCompile Include="Source\Disciples\Gameplay\StatValue.cpp" />
     <ClCompile Include="Source\Disciples\Tests\StatValue.cpp" />
     <ClCompile Include="Source\Disciples\Tests\Stat.cpp" />
+    <ClCompile Include="Source\Fallout\Game\Settings.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Fallout\Execute.h" />
     <ClInclude Include="Source\Engine\GUI\Picture.h" />
     <ClInclude Include="Source\Disciples\Gameplay\AttackValue.h" />
     <ClInclude Include="Source\Disciples\Gameplay\Source.h" />
@@ -266,9 +269,12 @@
     <ClInclude Include="Source\Disciples\Gameplay\StatValue.h" />
     <ClInclude Include="Source\Disciples\Tests\StatValue.h" />
     <ClInclude Include="Source\Disciples\Tests\Stat.h" />
+    <ClInclude Include="Source\Fallout\Game\Settings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />
+    <None Include="Disciples.bat" />
+    <None Include="Fallout.bat" />
     <None Include="libfreetype-6.dll" />
     <None Include="libjpeg-9.dll" />
     <None Include="libpng16-16.dll" />
@@ -281,6 +287,7 @@
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Config.xml" />
+    <Xml Include="Fallout.xml" />
     <Xml Include="Files\Prototypes\Units\Test.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

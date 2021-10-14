@@ -168,6 +168,12 @@
     <ClCompile Include="Source\Engine\GUI\Picture.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Fallout\Execute.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fallout\Game\Settings.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Disciples\Game\Location.h">
@@ -320,6 +326,12 @@
     <ClInclude Include="Source\Engine\GUI\Picture.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Fallout\Execute.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Fallout\Game\Settings.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype-6.dll" />
@@ -332,9 +344,16 @@
     <None Include="SDL2_ttf.dll" />
     <None Include="zlib1.dll" />
     <None Include="Commune.exe" />
+    <None Include="Fallout.bat">
+      <Filter>Исходные файлы</Filter>
+    </None>
+    <None Include="Disciples.bat">
+      <Filter>Исходные файлы</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Config.xml" />
     <Xml Include="Files\Prototypes\Units\Test.xml" />
+    <Xml Include="Fallout.xml" />
   </ItemGroup>
 </Project>

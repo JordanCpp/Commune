@@ -1,144 +1,30 @@
+#include <cassert>
 #include "Source/Disciples/Disciples.h"
-#include "Source/Disciples/Formats/FfReader.h"
-
-struct IndexInfo 
-{
-	size_t Id;
-	char Name[64];
-};
-
-struct AnimInfo
-{
-	size_t AnimNumber;
-	size_t SeqNumber;
-	char Name[64];
-};
-
-struct ImageInfo
-{
-	char Name[64];
-};
-
-class FrameInfo
-{
-public:
-	void LoadIndex(const std::string& fileName)
-	{
-		FILE* index = fopen(fileName.c_str(), "rb");
-
-		size_t count = 0;
-		fread(&count, 4, 1, index);
-
-		for (size_t i = 0; i < count; i++)
-		{
-			IndexInfo info = { 0 };
-
-			fread(&info.Id, 4, 1, index);
-
-			int ch = 0;
-			size_t j = 0;
-
-			ch = getc(index);
-
-			while (ch)
-			{
-				info.Name[j++] = (char)ch;
-				ch = getc(index);
-			}
-
-			_Indices.push_back(info);
-
-			fseek(index, 8, SEEK_CUR);
-		}
-
-		fclose(index);
-	}
-
-	void LoadAnims(const std::string& fileName)
-	{
-		FILE* file = fopen(fileName.c_str(), "rb");
-
-		size_t count = 0;
-
-		fread(&count, 4, 1, file);
-
-		AnimInfo info = { 0 };
-
-		for (size_t i = 0; i < count; i++)
-		{
-			int ch = 0;
-			size_t j = 0;
-
-			ch = getc(file);
-
-			while (ch)
-			{
-				info.Name[j++] = (char)ch;
-				ch = getc(file);
-			}
-
-			_Anims.push_back(info);
-		}
-
-		fclose(file);
-	}
-
-	void LoadImages(const std::string& fileName)
-	{
-		FILE* file = fopen(fileName.c_str(), "rb");
-
-		//for (size_t i = 0; i < _Indices.size(); i++)
-		//{
-			fseek(file, 0xB + 1024, SEEK_CUR);
-
-			int FileFramesNumber = 0;
-			fread(&FileFramesNumber, 4, 1, file);
-			printf("%d\n", FileFramesNumber);
-			for (int f = 0; f < FileFramesNumber; f++)
-			{
-				// - получим имя кадра из файла
-				static char FrameName[256];
-
-				int name_len = 0, ch = 0;
-				do {
-					ch = getc(file);
-					FrameName[name_len++] = (char)ch;
-				} while (ch);
-				printf("Converting frame: %s\n", FrameName);
-			}
-		//}
-
-		fclose(file);
-	}
-
-	void PrintI()
-	{
-		for (size_t i = 0; i < _Indices.size(); i++)
-		{
-			printf("Id=%d, Name=%s\n", _Indices[i].Id, _Indices[i].Name);
-		}
-	}
-
-	void PrintA()
-	{
-		for (size_t i = 0; i < _Anims.size(); i++)
-		{
-			printf("Name=%s\n", _Anims[i].Name);
-		}
-	}
-private:
-	std::vector<IndexInfo> _Indices;
-	std::vector<AnimInfo> _Anims;
-};
+#include "Source/Fallout/Execute.h"
 
 int main(int argc, char* argv[])
 {
-	Formats::FfReader reader;
-	reader.LoadFiles("d:\\Games\\Disciples II\\Imgs\\City.ff");
-	reader.Print();
-
-	//Disciples disciples("Config.xml");
-	//disciples.Run();
+	if (argc != 2)
+	{
+		std::cout << "Not found argument!" << '\n';
+	}
+	else
+	{
+		if (strcmp(argv[1], "Disciples") == 0)
+		{
+			Disciples disciples("Config.xml");
+			disciples.Run();
+		}
+		else if (strcmp(argv[1], "Fallout") == 0)
+		{
+			Fallout::Execute fallout("Fallout.xml");
+			fallout.Run();
+		}
+		else
+		{
+			std::cout << "Not found Game!" << '\n';
+		}
+	}
 
 	return 0;
 }
