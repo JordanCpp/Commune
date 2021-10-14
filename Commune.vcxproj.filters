@@ -392,10 +392,16 @@
     <None Include="Disciples.bat">
       <Filter>Исходные файлы</Filter>
     </None>
+    <None Include="Disciples\Text\Game.English" />
+    <None Include="Disciples\Text\Game.Russian" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Disciples.xml" />
     <Xml Include="Disciples\Prototypes\Units\Test.xml" />
     <Xml Include="Fallout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Fallout\Fonts\Crosterian.ttf" />
+    <Font Include="Disciples\Fonts\Crosterian.ttf" />
   </ItemGroup>
 </Project>

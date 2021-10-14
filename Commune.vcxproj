@@ -288,6 +288,8 @@
   <ItemGroup>
     <None Include="Commune.exe" />
     <None Include="Disciples.bat" />
+    <None Include="Disciples\Text\Game.English" />
+    <None Include="Disciples\Text\Game.Russian" />
     <None Include="Fallout.bat" />
     <None Include="libfreetype-6.dll" />
     <None Include="libjpeg-9.dll" />
@@ -303,6 +305,10 @@
     <Xml Include="Disciples.xml" />
     <Xml Include="Fallout.xml" />
     <Xml Include="Disciples\Prototypes\Units\Test.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Disciples\Fonts\Crosterian.ttf" />
+    <Font Include="Fallout\Fonts\Crosterian.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
