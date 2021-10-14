@@ -163,6 +163,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Fallout\Game\Script.cpp" />
+    <ClCompile Include="Source\Fallout\Game\Hex.cpp" />
+    <ClCompile Include="Source\Fallout\Game\Location.cpp" />
+    <ClCompile Include="Source\Engine\Common\Isometric.cpp" />
+    <ClCompile Include="Source\Fallout\Formats\MsgReader.cpp" />
     <ClCompile Include="Source\Fallout\Execute.cpp" />
     <ClCompile Include="Source\Engine\GUI\Picture.cpp" />
     <ClCompile Include="Source\Disciples\Gameplay\AttackValue.cpp" />
@@ -177,7 +182,7 @@
     <ClCompile Include="Source\Engine\Graphics\Animation.cpp" />
     <ClCompile Include="Source\Arcanum\Arcanum.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Camera.cpp" />
-    <ClCompile Include="Source\Disciples\Disciples.cpp" />
+    <ClCompile Include="Source\Disciples\Execute.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Canvas.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Color.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Font.cpp" />
@@ -216,8 +221,15 @@
     <ClCompile Include="Source\Disciples\Tests\StatValue.cpp" />
     <ClCompile Include="Source\Disciples\Tests\Stat.cpp" />
     <ClCompile Include="Source\Fallout\Game\Settings.cpp" />
+    <ClCompile Include="Source\Fallout\UI\UI.cpp" />
+    <ClCompile Include="Source\Fallout\Game\Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Fallout\Game\Script.h" />
+    <ClInclude Include="Source\Fallout\Game\Hex.h" />
+    <ClInclude Include="Source\Fallout\Game\Location.h" />
+    <ClInclude Include="Source\Engine\Common\Isometric.h" />
+    <ClInclude Include="Source\Fallout\Formats\MsgReader.h" />
     <ClInclude Include="Source\Fallout\Execute.h" />
     <ClInclude Include="Source\Engine\GUI\Picture.h" />
     <ClInclude Include="Source\Disciples\Gameplay\AttackValue.h" />
@@ -232,7 +244,7 @@
     <ClInclude Include="Source\Engine\Graphics\Animation.h" />
     <ClInclude Include="Source\Arcanum\Arcanum.h" />
     <ClInclude Include="Source\Engine\Graphics\Camera.h" />
-    <ClInclude Include="Source\Disciples\Disciples.h" />
+    <ClInclude Include="Source\Disciples\Execute.h" />
     <ClInclude Include="Source\Engine\Graphics\Canvas.h" />
     <ClInclude Include="Source\Engine\Graphics\Color.h" />
     <ClInclude Include="Source\Engine\Graphics\Font.h" />
@@ -270,6 +282,8 @@
     <ClInclude Include="Source\Disciples\Tests\StatValue.h" />
     <ClInclude Include="Source\Disciples\Tests\Stat.h" />
     <ClInclude Include="Source\Fallout\Game\Settings.h" />
+    <ClInclude Include="Source\Fallout\UI\UI.h" />
+    <ClInclude Include="Source\Fallout\Game\Tile.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />

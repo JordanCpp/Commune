@@ -12,6 +12,9 @@ Settings::Settings(const std::string& Name):
     reader.NextOpening("Config");
     reader.NextOpening("Video");
 
+    reader.NextNode("Title");
+    title = reader.Value();
+
     reader.NextNode("Width");
     size.PosX(reader.ValueInt());
 
@@ -46,4 +49,9 @@ size_t Settings::Fps()
 Graphics::Point Settings::WindowSize()
 {
     return size;
+}
+
+const std::string& Settings::Title()
+{
+    return title;
 }

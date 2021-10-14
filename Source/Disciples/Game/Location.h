@@ -8,6 +8,7 @@
 #include "../../Engine/Managers/ImageManager.h"
 #include "../../Engine/Graphics/Camera.h"
 #include "Leader.h"
+#include "../../Engine/Common/Isometric.h"
 
 namespace Game
 {
@@ -27,8 +28,6 @@ namespace Game
 		Graphics::Point Scale(size_t w, size_t h);
 		size_t Width();
 		size_t Height();
-		Graphics::Point CartesianToIsometric(Graphics::Point pt);
-		Graphics::Point IsometricToCartesian(Graphics::Point pt);
 		size_t PointToIndex(Graphics::Point pt);
 		Graphics::Point IndexToPoint(size_t index);
 		Graphics::Point PosToIndex(Graphics::Point pos);
@@ -41,6 +40,7 @@ namespace Game
 		std::vector<Tile> _Tiles;
 		std::vector<Leader> _Leaders;
 		size_t _Scaling;
+		Common::Isometric _Isometric;
 	};
 }
 

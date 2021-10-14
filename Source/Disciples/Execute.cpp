@@ -1,12 +1,14 @@
-#include "Disciples.h"
+#include "Execute.h"
 #include "UI/UI.h"
 #include "UI/MainMenu.h"
 #include "UI/Editor.h"
 #include "UI/Settings.h"
 
-Disciples::Disciples(const std::string& StartPath):
+using namespace Disciples;
+
+Execute::Execute(const std::string& StartPath):
 	_Settings(StartPath),
-	_Canvas(_Settings.WindowSize(), _Settings.Fps(), "Commune Engine!"),
+	_Canvas(_Settings.WindowSize(), _Settings.Fps(), _Settings.Title()),
 	_Camera(Graphics::Point(0, 0), Graphics::Point(_Canvas.Width(), _Canvas.Height())),
 	_FontManager(_Settings.Path()),
 	_TextManager(&_Canvas, &_FontManager),
@@ -30,7 +32,7 @@ Disciples::Disciples(const std::string& StartPath):
 	_Application->Activate(UI::UI::MainMenu);
 }
 
-void Disciples::Run()
+void Execute::Run()
 {
 	SDL_Event report = { 0 };
 

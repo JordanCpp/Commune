@@ -42,22 +42,6 @@ size_t Location::Height()
 	return 100;
 }
 
-Graphics::Point Location::CartesianToIsometric(Graphics::Point pt)
-{
-	size_t x = pt.PosX() - pt.PosY();
-	size_t y = (pt.PosX() + pt.PosY()) / 2;
-
-	return Graphics::Point(x, y);
-}
-
-Graphics::Point Location::IsometricToCartesian(Graphics::Point pt)
-{
-	size_t x = (2 * pt.PosY() + pt.PosX()) / 2;
-	size_t y = (2 * pt.PosY() - pt.PosX()) / 2;
-
-	return Graphics::Point(x, y);
-}
-
 size_t Location::PointToIndex(Graphics::Point pt)
 {
 	return (Width() * pt.PosY()) + pt.PosX();
@@ -89,7 +73,7 @@ void Location::Draw()
 			size_t x = cols * scale.PosX() / 2;
 			size_t y = rows * scale.PosY();
 
-			Graphics::Point pt = CartesianToIsometric(Graphics::Point(x, y));
+			Graphics::Point pt = _Isometric.CartesianToIsometric(Graphics::Point(x, y));
 
 			size_t dx = pt.PosX() + _Camera->PosX();
 			size_t dy = pt.PosY() + _Camera->PosY();

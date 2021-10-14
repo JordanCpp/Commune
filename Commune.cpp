@@ -1,5 +1,5 @@
 #include <cassert>
-#include "Source/Disciples/Disciples.h"
+#include "Source/Disciples/Execute.h"
 #include "Source/Fallout/Execute.h"
 
 int main(int argc, char* argv[])
@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	{
 		if (strcmp(argv[1], "Disciples") == 0)
 		{
-			Disciples disciples("Disciples.xml");
+			Disciples::Execute disciples("Disciples.xml");
 			disciples.Run();
 		}
 		else if (strcmp(argv[1], "Fallout") == 0)

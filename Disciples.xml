@@ -1,5 +1,6 @@
 <Config>
   <Video>
+    <Title>Disciples 2</Title>
     <Width>1366</Width>
     <Height>768</Height>
     <Fps>30</Fps>
