@@ -286,9 +286,9 @@
     <None Include="zlib1.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="Config.xml" />
+    <Xml Include="Disciples.xml" />
     <Xml Include="Fallout.xml" />
-    <Xml Include="Files\Prototypes\Units\Test.xml" />
+    <Xml Include="Disciples\Prototypes\Units\Test.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

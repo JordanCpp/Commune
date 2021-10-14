@@ -352,8 +352,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="Config.xml" />
-    <Xml Include="Files\Prototypes\Units\Test.xml" />
+    <Xml Include="Disciples.xml" />
+    <Xml Include="Disciples\Prototypes\Units\Test.xml" />
     <Xml Include="Fallout.xml" />
   </ItemGroup>
 </Project>

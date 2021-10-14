@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	{
 		if (strcmp(argv[1], "Disciples") == 0)
 		{
-			Disciples disciples("Config.xml");
+			Disciples disciples("Disciples.xml");
 			disciples.Run();
 		}
 		else if (strcmp(argv[1], "Fallout") == 0)
