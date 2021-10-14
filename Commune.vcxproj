@@ -221,6 +221,7 @@
     <ClCompile Include="Source\Disciples\Tests\StatValue.cpp" />
     <ClCompile Include="Source\Disciples\Tests\Stat.cpp" />
     <ClCompile Include="Source\Fallout\Game\Settings.cpp" />
+    <ClCompile Include="Source\Fallout\UI\MainMenu.cpp" />
     <ClCompile Include="Source\Fallout\UI\UI.cpp" />
     <ClCompile Include="Source\Fallout\Game\Tile.cpp" />
   </ItemGroup>
@@ -282,6 +283,7 @@
     <ClInclude Include="Source\Disciples\Tests\StatValue.h" />
     <ClInclude Include="Source\Disciples\Tests\Stat.h" />
     <ClInclude Include="Source\Fallout\Game\Settings.h" />
+    <ClInclude Include="Source\Fallout\UI\MainMenu.h" />
     <ClInclude Include="Source\Fallout\UI\UI.h" />
     <ClInclude Include="Source\Fallout\Game\Tile.h" />
   </ItemGroup>
@@ -291,6 +293,8 @@
     <None Include="Disciples\Text\Game.English" />
     <None Include="Disciples\Text\Game.Russian" />
     <None Include="Fallout.bat" />
+    <None Include="Fallout\Text\Game.English" />
+    <None Include="Fallout\Text\Game.Russian" />
     <None Include="libfreetype-6.dll" />
     <None Include="libjpeg-9.dll" />
     <None Include="libpng16-16.dll" />

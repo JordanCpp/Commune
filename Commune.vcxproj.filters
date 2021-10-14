@@ -195,6 +195,9 @@
     <ClCompile Include="Source\Fallout\Game\Script.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Fallout\UI\MainMenu.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Disciples\Game\Location.h">
@@ -374,6 +377,9 @@
     <ClInclude Include="Source\Fallout\Game\Script.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Fallout\UI\MainMenu.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype-6.dll" />
@@ -394,6 +400,8 @@
     </None>
     <None Include="Disciples\Text\Game.English" />
     <None Include="Disciples\Text\Game.Russian" />
+    <None Include="Fallout\Text\Game.English" />
+    <None Include="Fallout\Text\Game.Russian" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Disciples.xml" />

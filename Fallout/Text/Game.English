@@ -1,0 +1,18 @@
+<Text>
+  <Message>
+    <Number>1</Number>
+    <String>New game</String>
+  </Message>
+  <Message>
+    <Number>2</Number>
+    <String>Settings</String>
+  </Message>
+  <Message>
+    <Number>3</Number>
+    <String>Editor</String>
+  </Message>
+  <Message>
+    <Number>4</Number>
+    <String>Exit</String>
+  </Message>
+</Text>
