@@ -163,6 +163,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Fallout\Managers\ProtoManager.cpp" />
     <ClCompile Include="Source\Fallout\Game\Script.cpp" />
     <ClCompile Include="Source\Fallout\Game\Hex.cpp" />
     <ClCompile Include="Source\Fallout\Game\Location.cpp" />
@@ -224,8 +225,10 @@
     <ClCompile Include="Source\Fallout\UI\MainMenu.cpp" />
     <ClCompile Include="Source\Fallout\UI\UI.cpp" />
     <ClCompile Include="Source\Fallout\Game\Tile.cpp" />
+    <ClCompile Include="Source\Fallout\Gameplay\Stat.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Fallout\Managers\ProtoManager.h" />
     <ClInclude Include="Source\Fallout\Game\Script.h" />
     <ClInclude Include="Source\Fallout\Game\Hex.h" />
     <ClInclude Include="Source\Fallout\Game\Location.h" />
@@ -286,6 +289,7 @@
     <ClInclude Include="Source\Fallout\UI\MainMenu.h" />
     <ClInclude Include="Source\Fallout\UI\UI.h" />
     <ClInclude Include="Source\Fallout\Game\Tile.h" />
+    <ClInclude Include="Source\Fallout\Gameplay\Stat.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />
