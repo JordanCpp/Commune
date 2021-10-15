@@ -1,5 +1,6 @@
 #include "XmlWriter.hpp"
 
+using namespace Arc;
 using namespace Common;
 
 XmlWriter::XmlWriter(const std::string & Name):

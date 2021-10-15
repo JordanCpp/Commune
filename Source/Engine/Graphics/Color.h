@@ -3,23 +3,26 @@
 
 #include <cstdint>
 
-namespace Graphics
+namespace Arc
 {
-    class Color
+    namespace Graphics
     {
-    public:
-        Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 255);
-        ~Color();
-        uint8_t Red();
-        uint8_t Green();
-        uint8_t Blue();
-        uint8_t Alpha();
-    private:
-        uint8_t _Red;
-        uint8_t _Green;
-        uint8_t _Blue;
-        uint8_t _Alpha;
-    };
+        class Color
+        {
+        public:
+            Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 255);
+            ~Color();
+            uint8_t Red();
+            uint8_t Green();
+            uint8_t Blue();
+            uint8_t Alpha();
+        private:
+            uint8_t _Red;
+            uint8_t _Green;
+            uint8_t _Blue;
+            uint8_t _Alpha;
+        };
+    }
 }
 
 #endif

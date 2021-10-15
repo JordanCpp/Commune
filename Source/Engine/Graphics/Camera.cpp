@@ -1,5 +1,6 @@
 #include "Camera.h"
 
+using namespace Arc;
 using namespace Graphics;
 
 Camera::Camera(Graphics::Point pos, Graphics::Point size):

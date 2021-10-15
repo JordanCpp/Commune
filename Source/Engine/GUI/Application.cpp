@@ -1,6 +1,7 @@
 #include "Application.h"
 #include <cassert>
 
+using namespace Arc;
 using namespace GUI;
 
 Application::Application(Graphics::Canvas* CanvasSource):

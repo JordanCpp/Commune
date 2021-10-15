@@ -5,18 +5,21 @@
 #include <fstream>
 #include <string>
 
-namespace Common
+namespace Arc
 {
-    class XmlFile
+    namespace Common
     {
-    public:
-        XmlFile(const std::string& name);
-        ~XmlFile();
-        const std::string& Content();
-    private:
-        std::fstream input;
-        std::string content;
-    };
+        class XmlFile
+        {
+        public:
+            XmlFile(const std::string& name);
+            ~XmlFile();
+            const std::string& Content();
+        private:
+            std::fstream input;
+            std::string content;
+        };
+    }
 }
 
 #endif

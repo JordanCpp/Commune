@@ -5,10 +5,10 @@
 using namespace Fallout::Game;
 
 Settings::Settings(const std::string& Name):
-    size(Graphics::Point(0, 0)),
+    size(Arc::Graphics::Point(0, 0)),
     fps(0)
 {
-    Common::XmlReader reader(Name);
+    Arc::Common::XmlReader reader(Name);
 
     reader.NextOpening("Config");
     reader.NextOpening("Video");
@@ -47,7 +47,7 @@ size_t Settings::Fps()
     return fps;
 }
 
-Graphics::Point Settings::WindowSize()
+Arc::Graphics::Point Settings::WindowSize()
 {
     return size;
 }

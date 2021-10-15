@@ -1,6 +1,8 @@
 #include "Font.h"
 #include <cassert>
 
+using namespace Arc;
+
 Graphics::Font::Font(const std::string& FileName):
 	_Font(nullptr)
 {

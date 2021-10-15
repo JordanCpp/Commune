@@ -1,5 +1,6 @@
 #include "ImageManager.h"
 
+using namespace Arc;
 using namespace Managers;
 
 ImageManager::ImageManager(const std::string& StartPath, Graphics::Canvas* CanvasSource, Graphics::Color transparencySource):

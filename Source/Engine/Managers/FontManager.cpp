@@ -1,5 +1,6 @@
 #include "FontManager.h"
 
+using namespace Arc;
 using namespace Managers;
 
 FontManager::FontManager(const std::string& StartPath):

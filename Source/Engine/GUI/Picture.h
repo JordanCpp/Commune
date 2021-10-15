@@ -4,16 +4,19 @@
 #include "Widget.h"
 #include "../Graphics/Image.h"
 
-namespace GUI
+namespace Arc
 {
-	class Picture: public Widget
+	namespace GUI
 	{
-	public:
-		Picture(Graphics::Canvas* canvas, Graphics::Image* image, Graphics::Point pos, Graphics::Point size);
-		void Draw();
-	private:
-		Graphics::Image* _Image;
-	};
+		class Picture : public Widget
+		{
+		public:
+			Picture(Graphics::Canvas* canvas, Graphics::Image* image, Graphics::Point pos, Graphics::Point size);
+			void Draw();
+		private:
+			Graphics::Image* _Image;
+		};
+	}
 }
 
 #endif

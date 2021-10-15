@@ -3,15 +3,18 @@
 
 #include "Widget.h"
 
-namespace GUI
+namespace Arc
 {
-	class Form: public Widget
+	namespace GUI
 	{
-	public:
-		Form(Graphics::Canvas* canvas);
-		void Draw();
-	private:
-	};
+		class Form : public Widget
+		{
+		public:
+			Form(Graphics::Canvas* canvas);
+			void Draw();
+		private:
+		};
+	}
 }
 
 #endif

@@ -9,28 +9,31 @@
 #include "Window.h"
 #include "Picture.h"
 
-namespace GUI
+namespace Arc
 {
-	class Factory
+	namespace GUI
 	{
-	public:
-		Factory(Graphics::Canvas* canvas, Managers::TextManager* text, Managers::LanguageManager* language);
-		~Factory();
-		Graphics::Canvas* View();
-		Managers::TextManager* Text();
-		Managers::LanguageManager* Language();
-		Application* NewApplication();
-		Form* NewForm();
-		Button* NewButton(Graphics::Point pos, Graphics::Point size, const std::string& caption);
-		Label* NewLabel(Graphics::Point pos, Graphics::Point size, const std::string& caption);
-		Window* NewWindow(Graphics::Point pos, Graphics::Point size);
-		Picture* NewPicture(Graphics::Point pos, Graphics::Point size, Graphics::Image* image);
-	private:
-		Graphics::Canvas* _Canvas;
-		Managers::TextManager* _TextManager;
-		Managers::LanguageManager* _LanguageManager;
-		std::vector<Widget*> _Widgets;
-	};
+		class Factory
+		{
+		public:
+			Factory(Graphics::Canvas* canvas, Managers::TextManager* text, Managers::LanguageManager* language);
+			~Factory();
+			Graphics::Canvas* View();
+			Managers::TextManager* Text();
+			Managers::LanguageManager* Language();
+			Application* NewApplication();
+			Form* NewForm();
+			Button* NewButton(Graphics::Point pos, Graphics::Point size, const std::string& caption);
+			Label* NewLabel(Graphics::Point pos, Graphics::Point size, const std::string& caption);
+			Window* NewWindow(Graphics::Point pos, Graphics::Point size);
+			Picture* NewPicture(Graphics::Point pos, Graphics::Point size, Graphics::Image* image);
+		private:
+			Graphics::Canvas* _Canvas;
+			Managers::TextManager* _TextManager;
+			Managers::LanguageManager* _LanguageManager;
+			std::vector<Widget*> _Widgets;
+		};
+	}
 }
 
 #endif

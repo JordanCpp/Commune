@@ -4,17 +4,20 @@
 #include "Widget.h"
 #include "../Managers/TextManager.h"
 
-namespace GUI
+namespace Arc
 {
-	class Label: public Widget
+	namespace GUI
 	{
-	public:
-		Label(Graphics::Canvas* CanvasSource, Managers::TextManager* TextManagerSource, Graphics::Point pos, Graphics::Point size, const std::string& caption);
-		void Draw();
-	private:
-		Managers::TextManager* _TextManager;
-		std::string _Caption;
-	};
+		class Label : public Widget
+		{
+		public:
+			Label(Graphics::Canvas* CanvasSource, Managers::TextManager* TextManagerSource, Graphics::Point pos, Graphics::Point size, const std::string& caption);
+			void Draw();
+		private:
+			Managers::TextManager* _TextManager;
+			std::string _Caption;
+		};
+	}
 }
 
 #endif

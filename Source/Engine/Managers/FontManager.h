@@ -5,17 +5,20 @@
 #include <unordered_map>
 #include "../Graphics/Font.h"
 
-namespace Managers
+namespace Arc
 {
-	class FontManager : public Manager
+	namespace Managers
 	{
-	public:
-		FontManager(const std::string& StartPath);
-		~FontManager();
-	     Graphics::Font* GetFont(const std::string& DirName, const std::string& FileName);
-	private:
-		std::unordered_map<std::string, Graphics::Font*> _Fonts;
-	};
+		class FontManager : public Manager
+		{
+		public:
+			FontManager(const std::string& StartPath);
+			~FontManager();
+			Graphics::Font* GetFont(const std::string& DirName, const std::string& FileName);
+		private:
+			std::unordered_map<std::string, Graphics::Font*> _Fonts;
+		};
+	}
 }
 
 #endif

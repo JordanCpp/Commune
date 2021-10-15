@@ -3,8 +3,8 @@
 
 using namespace UI;
 
-MainMenu::MainMenu(GUI::Factory* factory, GUI::Application* application, Managers::ImageManager* images):
-	GUI::Form(factory->View()),
+MainMenu::MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Arc::Managers::ImageManager* images):
+	Arc::GUI::Form(factory->View()),
 	_Factory(factory),
 	_Application(application)
 {
@@ -14,18 +14,18 @@ MainMenu::MainMenu(GUI::Factory* factory, GUI::Application* application, Manager
 	size_t s = 5;
 	size_t x = s;
 	size_t y = s;
-	Graphics::Point sz(200, 35);
+	Arc::Graphics::Point sz(200, 35);
 
-	GUI::Button* newGame = factory->NewButton(Graphics::Point(x, y), sz, factory->Language()->GetString(1));
+	Arc::GUI::Button* newGame = factory->NewButton(Arc::Graphics::Point(x, y), sz, factory->Language()->GetString(1));
 	y += sz.PosY() + s;
 
-	GUI::Button* settings = factory->NewButton(Graphics::Point(x, y), sz, factory->Language()->GetString(2));
+	Arc::GUI::Button* settings = factory->NewButton(Arc::Graphics::Point(x, y), sz, factory->Language()->GetString(2));
 	y += sz.PosY() + s;
 
-	GUI::Button* editor = factory->NewButton(Graphics::Point(x, y), sz, factory->Language()->GetString(3));
+	Arc::GUI::Button* editor = factory->NewButton(Arc::Graphics::Point(x, y), sz, factory->Language()->GetString(3));
 	y += sz.PosY() + s;
 
-	GUI::Button* exit = factory->NewButton(Graphics::Point(x, y), sz, factory->Language()->GetString(4));
+	Arc::GUI::Button* exit = factory->NewButton(Arc::Graphics::Point(x, y), sz, factory->Language()->GetString(4));
 	y += sz.PosY() + s;
 
 	this->Attach(newGame);
@@ -42,8 +42,8 @@ MainMenu::MainMenu(GUI::Factory* factory, GUI::Application* application, Manager
 
 void MainMenu::Draw()
 {
-	Graphics::Point screenSize(this->Area().Width(), this->Area().Height());
-	_Screen->Draw(Graphics::Point(0, 0), screenSize);
+	Arc::Graphics::Point screenSize(this->Area().Width(), this->Area().Height());
+	_Screen->Draw(Arc::Graphics::Point(0, 0), screenSize);
 
 	for (size_t i = 0; i < Widgets().size(); i++)
 	{
@@ -51,17 +51,17 @@ void MainMenu::Draw()
 	}
 }
 
-void MainMenu::EditorOn(Graphics::Point pos)
+void MainMenu::EditorOn(Arc::Graphics::Point pos)
 {
 	_Application->Activate(UI::UI::Editor);
 }
 
-void MainMenu::ExitOn(Graphics::Point pos)
+void MainMenu::ExitOn(Arc::Graphics::Point pos)
 {
 	View()->StopEvent();
 }
 
-void MainMenu::SettingsOn(Graphics::Point pos)
+void MainMenu::SettingsOn(Arc::Graphics::Point pos)
 {
 	_Application->Activate(UI::UI::Settings);
 }

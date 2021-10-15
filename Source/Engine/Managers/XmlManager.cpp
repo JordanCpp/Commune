@@ -1,5 +1,6 @@
 #include "XmlManager.h"
 
+using namespace Arc;
 using namespace Managers;
 
 XmlManager::XmlManager(const std::string& StartPath):

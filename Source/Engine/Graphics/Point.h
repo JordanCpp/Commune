@@ -4,21 +4,24 @@
 #include <cstdint>
 #include "Point.h"
 
-namespace Graphics
+namespace Arc
 {
-    class Point
+    namespace Graphics
     {
-    public:
-        Point(size_t x, size_t y);
-        ~Point();
-        size_t PosX();
-        size_t PosY();
-        void PosX(size_t x);
-        void PosY(size_t y);
-    private:
-        size_t _PosX;
-        size_t _PosY;
-    };
+        class Point
+        {
+        public:
+            Point(size_t x, size_t y);
+            ~Point();
+            size_t PosX();
+            size_t PosY();
+            void PosX(size_t x);
+            void PosY(size_t y);
+        private:
+            size_t _PosX;
+            size_t _PosY;
+        };
+    }
 }
 
 #endif

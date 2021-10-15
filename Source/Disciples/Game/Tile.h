@@ -17,7 +17,7 @@ namespace Game
 		size_t Width();
 		size_t Height();
 	private:
-		Graphics::Image _Body;
+		Arc::Graphics::Image _Body;
 	};
 }
 

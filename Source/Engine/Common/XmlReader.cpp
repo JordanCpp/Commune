@@ -1,5 +1,6 @@
 #include "XmlReader.hpp"
 
+using namespace Arc;
 using namespace Common;
 
 XmlReader::XmlReader(const std::string & name, size_t mode_open)

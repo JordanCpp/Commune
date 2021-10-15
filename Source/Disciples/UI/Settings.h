@@ -5,10 +5,10 @@
 
 namespace UI
 {
-	class Settings: public GUI::Form
+	class Settings: public Arc::GUI::Form
 	{
 	public:
-		Settings(GUI::Factory* factory);
+		Settings(Arc::GUI::Factory* factory);
 	private:
 	};
 }

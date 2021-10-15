@@ -2,7 +2,7 @@
 
 using namespace Game;
 
-Location::Location(Graphics::Camera* CameraSource, Managers::ImageManager* ImageManagerSource):
+Location::Location(Arc::Graphics::Camera* CameraSource, Arc::Managers::ImageManager* ImageManagerSource):
 	_Camera(CameraSource),
 	_ImageManager(ImageManagerSource),
 	_Width(0),
@@ -24,12 +24,12 @@ void Game::Location::Scale(size_t percent)
 	}
 }
 
-Graphics::Point Game::Location::Scale(size_t w, size_t h)
+Arc::Graphics::Point Game::Location::Scale(size_t w, size_t h)
 {
-	size_t sw = (float(w) / 100) * _Scaling;
-	size_t sh = (float(h) / 100) * _Scaling;
+	size_t sw = size_t((float(w) / 100) * _Scaling);
+	size_t sh = size_t((float(h) / 100) * _Scaling);
 
-	return Graphics::Point(sw, sh);
+	return Arc::Graphics::Point(sw, sh);
 }
 
 size_t Location::Width()
@@ -42,29 +42,29 @@ size_t Location::Height()
 	return 100;
 }
 
-size_t Location::PointToIndex(Graphics::Point pt)
+size_t Location::PointToIndex(Arc::Graphics::Point pt)
 {
 	return (Width() * pt.PosY()) + pt.PosX();
 }
 
-Graphics::Point Location::IndexToPoint(size_t index)
+Arc::Graphics::Point Location::IndexToPoint(size_t index)
 {
-	Graphics::Point pt(index % Width(), index / Width());
+	Arc::Graphics::Point pt(index % Width(), index / Width());
 
 	return pt;
 }
 
-Graphics::Point Location::PosToIndex(Graphics::Point pos)
+Arc::Graphics::Point Location::PosToIndex(Arc::Graphics::Point pos)
 {
-	float a = (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth + (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight;
-	float b = (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight - (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth;
+	float a = float((pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth + (pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight);
+	float b = float((pos.PosY() - _Camera->PosY()) / Tile::DefaultHeight - (pos.PosX() - _Camera->PosX()) / Tile::DefaultWidth);
 
-	return Graphics::Point((size_t)a, (size_t)b);
+	return Arc::Graphics::Point((size_t)a, (size_t)b);
 }
 
 void Location::Draw()
 {
-	Graphics::Point scale = Scale(Tile::DefaultWidth, Tile::DefaultHeight);
+	Arc::Graphics::Point scale = Scale(Tile::DefaultWidth, Tile::DefaultHeight);
 
 	for (size_t rows = 0; rows < Width(); rows++)
 	{
@@ -73,12 +73,12 @@ void Location::Draw()
 			size_t x = cols * scale.PosX() / 2;
 			size_t y = rows * scale.PosY();
 
-			Graphics::Point pt = _Isometric.CartesianToIsometric(Graphics::Point(x, y));
+			Arc::Graphics::Point pt = _Isometric.CartesianToIsometric(Arc::Graphics::Point(x, y));
 
 			size_t dx = pt.PosX() + _Camera->PosX();
 			size_t dy = pt.PosY() + _Camera->PosY();
 
-			_ImageManager->GetImage("Images\\", "Default.png")->Draw(Graphics::Point(dx, dy), Graphics::Point(scale.PosX(), scale.PosY()));
+			_ImageManager->GetImage("Images\\", "Default.png")->Draw(Arc::Graphics::Point(dx, dy), Arc::Graphics::Point(scale.PosX(), scale.PosY()));
 		}
 	}
 }

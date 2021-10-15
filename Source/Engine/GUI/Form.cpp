@@ -1,5 +1,6 @@
 #include "Form.h"
 
+using namespace Arc;
 using namespace GUI;
 
 Form::Form(Graphics::Canvas* canvas):

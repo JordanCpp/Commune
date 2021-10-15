@@ -1,5 +1,6 @@
 #include "Label.h"
 
+using namespace Arc;
 using namespace GUI;
 
 Label::Label(Graphics::Canvas* CanvasSource, Managers::TextManager* TextManagerSource, Graphics::Point pos, Graphics::Point size, const std::string& caption) :

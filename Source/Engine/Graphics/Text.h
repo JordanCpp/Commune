@@ -6,19 +6,22 @@
 #include "Font.h"
 #include "Image.h"
 
-namespace Graphics
+namespace Arc
 {
-    class Text
+    namespace Graphics
     {
-    public:
-        Text(Graphics::Canvas* CanvasSource, Graphics::Font* FontSource, const std::string& TextSource);
-        ~Text();
-        int Width();
-        int Height();
-        void Draw(Point Pt);
-    private:
-        Image* _Image;
-    };
+        class Text
+        {
+        public:
+            Text(Graphics::Canvas* CanvasSource, Graphics::Font* FontSource, const std::string& TextSource);
+            ~Text();
+            int Width();
+            int Height();
+            void Draw(Point Pt);
+        private:
+            Image* _Image;
+        };
+    }
 }
 
 #endif

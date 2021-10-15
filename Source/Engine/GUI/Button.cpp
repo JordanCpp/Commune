@@ -1,5 +1,6 @@
 #include "Button.h"
 
+using namespace Arc;
 using namespace GUI;
 
 Button::Button(Graphics::Canvas* CanvasSource, Managers::TextManager* TextManagerSource, Graphics::Point pos, Graphics::Point size, const std::string& caption) :

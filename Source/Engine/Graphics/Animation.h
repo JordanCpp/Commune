@@ -1,13 +1,16 @@
 #ifndef _Engine_Graphics_Animation_h_
 #define _Engine_Graphics_Animation_h_
 
-namespace Graphics
+namespace Arc
 {
-	class Animation
+	namespace Graphics
 	{
-	public:
-	private:
-	};
+		class Animation
+		{
+		public:
+		private:
+		};
+	}
 }
 
 #endif

@@ -1,5 +1,6 @@
 #include "XmlFile.hpp"
 
+using namespace Arc;
 using namespace Common;
 
 XmlFile::XmlFile(const std::string & name)

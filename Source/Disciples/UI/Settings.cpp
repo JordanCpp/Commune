@@ -2,7 +2,7 @@
 
 using namespace UI;
 
-Settings::Settings(GUI::Factory* factory) :
-	GUI::Form(factory->View())
+Settings::Settings(Arc::GUI::Factory* factory) :
+	Arc::GUI::Form(factory->View())
 {
 }

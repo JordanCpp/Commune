@@ -1,6 +1,8 @@
 #include "TextManager.h"
 #include <cassert>
 
+using namespace Arc;
+
 Managers::TextManager::TextManager(Graphics::Canvas* CanvasSource, FontManager* FontManagerSource):
 	_Canvas(CanvasSource),
 	_FontManager(FontManagerSource),

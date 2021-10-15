@@ -1,5 +1,6 @@
 #include "Point.h"
 
+using namespace Arc;
 using namespace Graphics;
 
 Point::Point(size_t x, size_t y):

@@ -4,22 +4,25 @@
 #include "Manager.h"
 #include "XmlManager.h"
 
-namespace Managers
+namespace Arc
 {
-	class LanguageManager : public Manager
+	namespace Managers
 	{
-	public:
-		LanguageManager(const std::string& StartPath, XmlManager* XmlManagerSource);
-		void ActivateLang(const std::string& name);
-		void ActivateFile(const std::string& name);
-		const std::string& GetString(size_t number);
-	private:
-		XmlManager* _XmlManager;
-		std::string _Lang;
-		std::string _File;
-		std::string _FullName;
-		std::string _Error;
-	};
+		class LanguageManager : public Manager
+		{
+		public:
+			LanguageManager(const std::string& StartPath, XmlManager* XmlManagerSource);
+			void ActivateLang(const std::string& name);
+			void ActivateFile(const std::string& name);
+			const std::string& GetString(size_t number);
+		private:
+			XmlManager* _XmlManager;
+			std::string _Lang;
+			std::string _File;
+			std::string _FullName;
+			std::string _Error;
+		};
+	}
 }
 
 #endif

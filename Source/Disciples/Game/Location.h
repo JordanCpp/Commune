@@ -22,25 +22,25 @@ namespace Game
 			ScaleStep = 25,
 			ScaleDefault = 100
 		};
-		Location(Graphics::Camera* CameraSource, Managers::ImageManager* ImageManagerSource);
+		Location(Arc::Graphics::Camera* CameraSource, Arc::Managers::ImageManager* ImageManagerSource);
 		size_t Scale();
 		void Scale(size_t percent);
-		Graphics::Point Scale(size_t w, size_t h);
+		Arc::Graphics::Point Scale(size_t w, size_t h);
 		size_t Width();
 		size_t Height();
-		size_t PointToIndex(Graphics::Point pt);
-		Graphics::Point IndexToPoint(size_t index);
-		Graphics::Point PosToIndex(Graphics::Point pos);
+		size_t PointToIndex(Arc::Graphics::Point pt);
+		Arc::Graphics::Point IndexToPoint(size_t index);
+		Arc::Graphics::Point PosToIndex(Arc::Graphics::Point pos);
 		void Draw();
 	private:
-		Graphics::Camera* _Camera;
-		Managers::ImageManager* _ImageManager;
+		Arc::Graphics::Camera* _Camera;
+		Arc::Managers::ImageManager* _ImageManager;
 		size_t _Width;
 		size_t _Height;
 		std::vector<Tile> _Tiles;
 		std::vector<Leader> _Leaders;
 		size_t _Scaling;
-		Common::Isometric _Isometric;
+		Arc::Common::Isometric _Isometric;
 	};
 }
 

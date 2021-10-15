@@ -5,20 +5,23 @@
 #include "Manager.h"
 #include "../Graphics/Image.h"
 
-namespace Managers
+namespace Arc
 {
-	class ImageManager : public Manager
+	namespace Managers
 	{
-	public:
-		ImageManager(const std::string& StartPath, Graphics::Canvas* CanvasSource, Graphics::Color transparencySource);
-		~ImageManager();
-		Graphics::Color Transparency();
-		Graphics::Image* GetImage(const std::string& DirName, const std::string& FileName);
-	private:
-		Graphics::Canvas* _Canvas;
-		Graphics::Color _Transparency;
-		std::unordered_map<std::string, Graphics::Image*> images;
-	};
+		class ImageManager : public Manager
+		{
+		public:
+			ImageManager(const std::string& StartPath, Graphics::Canvas* CanvasSource, Graphics::Color transparencySource);
+			~ImageManager();
+			Graphics::Color Transparency();
+			Graphics::Image* GetImage(const std::string& DirName, const std::string& FileName);
+		private:
+			Graphics::Canvas* _Canvas;
+			Graphics::Color _Transparency;
+			std::unordered_map<std::string, Graphics::Image*> images;
+		};
+	}
 }
 
 #endif

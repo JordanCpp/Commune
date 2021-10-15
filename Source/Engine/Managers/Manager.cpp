@@ -1,5 +1,6 @@
 #include "Manager.h"
 
+using namespace Arc;
 using namespace Managers;
 
 Manager::Manager(const std::string& StartPath, size_t Count)

@@ -1,5 +1,6 @@
 #include "Factory.h"
 
+using namespace Arc;
 using namespace GUI;
 
 Factory::Factory(Graphics::Canvas* canvas, Managers::TextManager* text, Managers::LanguageManager* language):

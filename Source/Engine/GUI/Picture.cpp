@@ -1,5 +1,6 @@
 #include "Picture.h"
 
+using namespace Arc;
 using namespace GUI;
 
 GUI::Picture::Picture(Graphics::Canvas* canvas, Graphics::Image* image, Graphics::Point pos, Graphics::Point size):

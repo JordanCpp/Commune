@@ -3,6 +3,7 @@
 #include <cassert>
 #include <SDL2/SDL_image.h>
 
+using namespace Arc;
 using namespace Graphics;
 
 Image::Image(Canvas* Source, Color transparency, const std::string& Name) :

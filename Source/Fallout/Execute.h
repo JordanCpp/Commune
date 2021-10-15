@@ -21,15 +21,15 @@ namespace Fallout
 		void Run();
 	private:
 		Fallout::Game::Settings _Settings;
-		Graphics::Canvas _Canvas;
-		Graphics::Camera _Camera;
-		Managers::FontManager _FontManager;
-		Managers::TextManager _TextManager;
-		Managers::ImageManager _ImageManager;
-		Managers::XmlManager _XmlManager;
-		Managers::LanguageManager _LanguageManager;
-		GUI::Factory _Factory;
-		GUI::Application* _Application;
+		Arc::Graphics::Canvas _Canvas;
+		Arc::Graphics::Camera _Camera;
+		Arc::Managers::FontManager _FontManager;
+		Arc::Managers::TextManager _TextManager;
+		Arc::Managers::ImageManager _ImageManager;
+		Arc::Managers::XmlManager _XmlManager;
+		Arc::Managers::LanguageManager _LanguageManager;
+		Arc::GUI::Factory _Factory;
+		Arc::GUI::Application* _Application;
 	};
 }
 

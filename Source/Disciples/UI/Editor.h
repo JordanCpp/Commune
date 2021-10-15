@@ -7,24 +7,24 @@
 
 namespace UI
 {
-	class Editor: public GUI::Form
+	class Editor: public Arc::GUI::Form
 	{
 	public:
-		Editor(GUI::Factory* factory, Managers::ImageManager* imageManager, GUI::Application* application, Graphics::Camera* camera, Game::Location* location);
+		Editor(Arc::GUI::Factory* factory, Arc::Managers::ImageManager* imageManager, Arc::GUI::Application* application, Arc::Graphics::Camera* camera, Game::Location* location);
 		void Draw();
 		void KeyboardEvent(size_t key);
 		void ScaleInc();
 		void ScaleDec();
 		void ScaleDef();
 		void Select();
-		void ClickOn(Graphics::Point pos);
+		void ClickOn(Arc::Graphics::Point pos);
 	private:
-		GUI::Factory* _Factory;
-		Managers::ImageManager* _ImageManager;
-		GUI::Application* _Application;
-		Graphics::Camera* _Camera;
+		Arc::GUI::Factory* _Factory;
+		Arc::Managers::ImageManager* _ImageManager;
+		Arc::GUI::Application* _Application;
+		Arc::Graphics::Camera* _Camera;
 		Game::Location* _Location;
-		GUI::Window* win;
+		Arc::GUI::Window* win;
 	};
 }
 

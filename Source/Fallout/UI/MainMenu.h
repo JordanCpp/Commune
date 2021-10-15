@@ -3,20 +3,21 @@
 
 #include "../../Engine/GUI/Factory.h"
 #include "../../Engine/Managers/ImageManager.h"
+
 namespace Fallout
 {
 	namespace UI
 	{
-		class MainMenu : public GUI::Form
+		class MainMenu : public Arc::GUI::Form
 		{
 		public:
-			MainMenu(GUI::Factory* factory, GUI::Application* application, Managers::ImageManager* images);
+			MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Arc::Managers::ImageManager* imageManager);
 			void Draw();
-			void ExitOn(Graphics::Point pos);
+			void ExitOn(Arc::Graphics::Point pos);
 		private:
-			GUI::Factory* _Factory;
-			GUI::Application* _Application;
-			Graphics::Image* _Screen;
+			Arc::GUI::Factory* _Factory;
+			Arc::GUI::Application* _Application;
+			Arc::Managers::ImageManager* _ImageManager;
 		};
 	}
 }

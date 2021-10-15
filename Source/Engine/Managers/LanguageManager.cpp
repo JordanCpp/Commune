@@ -1,6 +1,8 @@
 #include "LanguageManager.h"
 #include "../Common/XmlReader.hpp"
 
+using namespace Arc;
+
 Managers::LanguageManager::LanguageManager(const std::string& StartPath, XmlManager* XmlManagerSource):
 	Manager(StartPath),
 	_XmlManager(XmlManagerSource)

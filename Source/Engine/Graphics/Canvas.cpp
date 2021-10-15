@@ -3,6 +3,7 @@
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_image.h>
 
+using namespace Arc;
 using namespace Graphics;
 
 Canvas::Canvas(Point Size, size_t Fps, const std::string& Title):

@@ -1,6 +1,8 @@
 #include "Text.h"
 #include <cassert>
 
+using namespace Arc;
+
 Graphics::Text::Text(Graphics::Canvas* CanvasSource, Graphics::Font* FontSource, const std::string& TextSource):
     _Image(nullptr)
 {

@@ -4,22 +4,25 @@
 #include <string>
 #include <fstream>
 
-namespace Common
+namespace Arc
 {
-    class XmlWriter
+    namespace Common
     {
-    public:
-        XmlWriter(const std::string& Name);
-        ~XmlWriter();
-        void Node(const std::string& Name, const std::string& Value);
-        void OpenTag(const std::string& Name);
-        void CloseTag(const std::string& Name);
-        void AddSpace();
-    private:
-        int mTabs;
-        std::string mResult;
-        std::ofstream mOutput;
-    };
+        class XmlWriter
+        {
+        public:
+            XmlWriter(const std::string& Name);
+            ~XmlWriter();
+            void Node(const std::string& Name, const std::string& Value);
+            void OpenTag(const std::string& Name);
+            void CloseTag(const std::string& Name);
+            void AddSpace();
+        private:
+            int mTabs;
+            std::string mResult;
+            std::ofstream mOutput;
+        };
+    }
 }
 
 #endif

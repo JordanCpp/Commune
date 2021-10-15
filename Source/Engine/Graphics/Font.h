@@ -4,17 +4,20 @@
 #include <string>
 #include <SDL2/SDL_ttf.h>
 
-namespace Graphics
+namespace Arc
 {
-	class Font
+	namespace Graphics
 	{
-	public:
-		Font(const std::string& FileName);
-		~Font();
-		TTF_Font* Get();
-	private:
-		TTF_Font* _Font;
-	};
+		class Font
+		{
+		public:
+			Font(const std::string& FileName);
+			~Font();
+			TTF_Font* Get();
+		private:
+			TTF_Font* _Font;
+		};
+	}
 }
 
 #endif

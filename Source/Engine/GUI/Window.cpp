@@ -1,5 +1,6 @@
 #include "Window.h"
 
+using namespace Arc;
 using namespace GUI;
 
 Window::Window(Graphics::Canvas* canvas, Managers::TextManager* text, Graphics::Point pos, Graphics::Point size):

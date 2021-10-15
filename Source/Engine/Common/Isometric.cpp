@@ -1,5 +1,6 @@
 #include "Isometric.h"
 
+using namespace Arc;
 using namespace Common;
 
 Graphics::Point Isometric::CartesianToIsometric(Graphics::Point pt)

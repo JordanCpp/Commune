@@ -4,22 +4,25 @@
 #include "Form.h"
 #include <unordered_map>
 
-namespace GUI
+namespace Arc
 {
-	class Application : public Widget
+	namespace GUI
 	{
-	public:
-		Application(Graphics::Canvas* CanvasSource);
-		~Application();
-		void Attach(size_t id, Form* form);
-		void Activate(size_t id);
-		void Handler(SDL_Event& report);
-		void Draw();
-	private:
-		Widget* _Form;
-		Widget* _Current;
-		std::unordered_map<size_t, Form*> _Forms;
-	};
+		class Application : public Widget
+		{
+		public:
+			Application(Graphics::Canvas* CanvasSource);
+			~Application();
+			void Attach(size_t id, Form* form);
+			void Activate(size_t id);
+			void Handler(SDL_Event& report);
+			void Draw();
+		private:
+			Widget* _Form;
+			Widget* _Current;
+			std::unordered_map<size_t, Form*> _Forms;
+		};
+	}
 }
 
 #endif

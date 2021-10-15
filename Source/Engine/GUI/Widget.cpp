@@ -1,5 +1,6 @@
 #include "Widget.h"
 
+using namespace Arc;
 using namespace GUI;
 
 Widget::Widget(Graphics::Canvas* canvas, Graphics::Point pos, Graphics::Point size):

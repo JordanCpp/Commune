@@ -3,16 +3,19 @@
 
 #include "../Graphics/Point.h"
 
-namespace Common
+namespace Arc
 {
-    class Isometric
+    namespace Common
     {
-    public:
-        Graphics::Point CartesianToIsometric(Graphics::Point pt);
-        Graphics::Point IsometricToCartesian(Graphics::Point pt);
-    private:
+        class Isometric
+        {
+        public:
+            Graphics::Point CartesianToIsometric(Graphics::Point pt);
+            Graphics::Point IsometricToCartesian(Graphics::Point pt);
+        private:
 
-    };
+        };
+    }
 }
 
 #endif

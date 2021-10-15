@@ -15,10 +15,10 @@ namespace Fallout
             ~Settings();
             const std::string& Path();
             size_t Fps();
-            Graphics::Point WindowSize();
+            Arc::Graphics::Point WindowSize();
             const std::string& Title();
         private:
-            Graphics::Point size;
+            Arc::Graphics::Point size;
             size_t fps;
             std::string path;
             std::string title;

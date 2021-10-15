@@ -6,18 +6,18 @@
 
 namespace UI
 {
-	class MainMenu: public GUI::Form
+	class MainMenu: public Arc::GUI::Form
 	{
 	public:
-		MainMenu(GUI::Factory* factory, GUI::Application* application, Managers::ImageManager* images);
+		MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Arc::Managers::ImageManager* images);
 		void Draw();
-		void EditorOn(Graphics::Point pos);
-		void ExitOn(Graphics::Point pos);
-		void SettingsOn(Graphics::Point pos);
+		void EditorOn(Arc::Graphics::Point pos);
+		void ExitOn(Arc::Graphics::Point pos);
+		void SettingsOn(Arc::Graphics::Point pos);
 	private:
-		GUI::Factory* _Factory;
-		GUI::Application* _Application;
-		Graphics::Image* _Screen;
+		Arc::GUI::Factory* _Factory;
+		Arc::GUI::Application* _Application;
+		Arc::Graphics::Image* _Screen;
 	};
 }
 

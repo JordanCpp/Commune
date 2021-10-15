@@ -3,17 +3,20 @@
 
 #include <string>
 
-namespace Managers
+namespace Arc
 {
-	class Manager
+	namespace Managers
 	{
-	private:
-		std::string _ShortPath;
-		std::string _FullPath;
-	public:
-		Manager(const std::string& StartPath, size_t Count = 2048);
-		const std::string& GetPath(const std::string DirName, const std::string& FileName);
-	};
+		class Manager
+		{
+		private:
+			std::string _ShortPath;
+			std::string _FullPath;
+		public:
+			Manager(const std::string& StartPath, size_t Count = 2048);
+			const std::string& GetPath(const std::string DirName, const std::string& FileName);
+		};
+	}
 }
 
 #endif

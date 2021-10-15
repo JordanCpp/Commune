@@ -4,16 +4,19 @@
 #include "Widget.h"
 #include "../Managers/TextManager.h"
 
-namespace GUI
+namespace Arc
 {
-	class Window: public Widget
+	namespace GUI
 	{
-	public:
-		Window(Graphics::Canvas* canvas, Managers::TextManager* text, Graphics::Point pos, Graphics::Point size);
-		void Draw();
-	private:
-		Managers::TextManager* _TextManager;
-	};
+		class Window : public Widget
+		{
+		public:
+			Window(Graphics::Canvas* canvas, Managers::TextManager* text, Graphics::Point pos, Graphics::Point size);
+			void Draw();
+		private:
+			Managers::TextManager* _TextManager;
+		};
+	}
 }
 
 #endif

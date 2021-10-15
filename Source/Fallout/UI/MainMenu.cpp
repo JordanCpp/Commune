@@ -3,10 +3,11 @@
 
 using namespace Fallout::UI;
 
-MainMenu::MainMenu(GUI::Factory* factory, GUI::Application* application, Managers::ImageManager* images):
-	GUI::Form(factory->View()),
+MainMenu::MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Arc::Managers::ImageManager* imageManager):
+	Arc::GUI::Form(factory->View()),
 	_Factory(factory),
-	_Application(application)
+	_Application(application),
+	_ImageManager(imageManager)
 {
 	factory->Language()->ActivateLang("Russian");
 	factory->Language()->ActivateFile("Game");
@@ -14,9 +15,9 @@ MainMenu::MainMenu(GUI::Factory* factory, GUI::Application* application, Manager
 	size_t s = 5;
 	size_t x = s;
 	size_t y = s;
-	Graphics::Point sz(200, 35);
+	Arc::Graphics::Point sz(200, 35);
 
-	GUI::Button* exit = factory->NewButton(Graphics::Point(x, y), sz, factory->Language()->GetString(4));
+	Arc::GUI::Button* exit = factory->NewButton(Arc::Graphics::Point(x, y), sz, factory->Language()->GetString(4));
 	y += sz.PosY() + s;
 
 	this->Attach(exit);
@@ -32,7 +33,7 @@ void MainMenu::Draw()
 	}
 }
 
-void MainMenu::ExitOn(Graphics::Point pos)
+void MainMenu::ExitOn(Arc::Graphics::Point pos)
 {
 	View()->StopEvent();
 }
