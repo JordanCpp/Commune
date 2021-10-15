@@ -1,5 +1,5 @@
-#ifndef _Engine_Graphics_Canvas_h_
-#define _Engine_Graphics_Canvas_h_
+#ifndef _Arcturus_Graphics_Canvas_h_
+#define _Arcturus_Graphics_Canvas_h_
 
 #include <SDL2/SDL.h>
 #include "Point.h"

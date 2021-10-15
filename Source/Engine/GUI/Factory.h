@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI_Factory_h_
-#define _Engine_GUI_Factory_h_
+#ifndef _Arcturus_GUI_Factory_h_
+#define _Arcturus_GUI_Factory_h_
 
 #include "../../Engine/Managers/LanguageManager.h"
 #include "Application.h"

@@ -1,5 +1,5 @@
-#ifndef _Managers_Manager_h_
-#define _Managers_Manager_h_
+#ifndef _Arcturus_Managers_Manager_h_
+#define _Arcturus_Managers_Manager_h_
 
 #include <string>
 

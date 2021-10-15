@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI_Button_h_
-#define _Engine_GUI_Button_h_
+#ifndef _Arcturus_GUI_Button_h_
+#define _Arcturus_GUI_Button_h_
 
 #include "Widget.h"
 #include "../Managers/TextManager.h"

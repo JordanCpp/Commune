@@ -1,5 +1,5 @@
-#ifndef _Managers_ImageManager_h_
-#define _Managers_ImageManager_h_
+#ifndef _Arcturus_Managers_ImageManager_h_
+#define _Arcturus_Managers_ImageManager_h_
 
 #include <unordered_map>
 #include "Manager.h"

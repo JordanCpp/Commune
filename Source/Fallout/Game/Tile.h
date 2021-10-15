@@ -1,6 +1,8 @@
 #ifndef _Fallout_Game_Tile_h_
 #define _Fallout_Game_Tile_h_
 
+#include "../../Engine/Common/XmlReader.hpp"
+
 namespace Fallout
 {
     namespace Game
@@ -16,6 +18,7 @@ namespace Fallout
             };
 
         public:
+            Tile(Arc::Common::XmlReader* reader);
         private:
         };
     }

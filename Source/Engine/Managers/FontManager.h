@@ -1,5 +1,5 @@
-#ifndef _Managers_FontManager_h_
-#define _Managers_FontManager_h_
+#ifndef _Arcturus_Managers_FontManager_h_
+#define _Arcturus_Managers_FontManager_h_
 
 #include "Manager.h"
 #include <unordered_map>

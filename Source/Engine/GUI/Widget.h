@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI_Widget_h_
-#define _Engine_GUI_Widget_h_
+#ifndef _Arcturus_GUI_Widget_h_
+#define _Arcturus_GUI_Widget_h_
 
 #include "../Graphics/Canvas.h"
 #include <vector>

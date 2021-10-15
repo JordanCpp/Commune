@@ -1,5 +1,5 @@
-#ifndef _Common_XmlFile_hpp_
-#define _Common_XmlFile_hpp_
+#ifndef _Arcturus_Common_XmlFile_hpp_
+#define _Arcturus_Common_XmlFile_hpp_
 
 #include <iostream>
 #include <fstream>

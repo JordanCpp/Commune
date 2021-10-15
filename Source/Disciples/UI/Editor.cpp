@@ -1,5 +1,6 @@
 #include "Editor.h"
- 
+#include "..\..\Fallout\UI\Editor.h"
+
 using namespace UI;
 
 Editor::Editor(Arc::GUI::Factory* factory, Arc::Managers::ImageManager* imageManager, Arc::GUI::Application* application, Arc::Graphics::Camera* camera, Game::Location* location):

@@ -1,5 +1,5 @@
-#ifndef _Common_Isometric_hpp_
-#define _Common_Isometric_hpp_
+#ifndef _Arcturus_Common_Isometric_hpp_
+#define _Arcturus_Common_Isometric_hpp_
 
 #include "../Graphics/Point.h"
 

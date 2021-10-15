@@ -1,5 +1,5 @@
-#ifndef _Engine_Graphics_Color_h_
-#define _Engine_Graphics_Color_h_
+#ifndef _Arcturus_Graphics_Color_h_
+#define _Arcturus_Graphics_Color_h_
 
 #include <cstdint>
 

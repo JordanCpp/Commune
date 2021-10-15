@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI_Application_h_
-#define _Engine_GUI_Application_h_
+#ifndef _Arcturus_GUI_Application_h_
+#define _Arcturus_GUI_Application_h_
 
 #include "Form.h"
 #include <unordered_map>

@@ -3,6 +3,7 @@
 
 #include "../../Engine/GUI/Factory.h"
 #include "../../Engine/Managers/ImageManager.h"
+#include "../Formats/Sprite.h"
 
 namespace Fallout
 {
@@ -18,6 +19,8 @@ namespace Fallout
 			Arc::GUI::Factory* _Factory;
 			Arc::GUI::Application* _Application;
 			Arc::Managers::ImageManager* _ImageManager;
+			Arc::Graphics::Image* _Img;
+			Formats::Sprite* _Spr;
 		};
 	}
 }

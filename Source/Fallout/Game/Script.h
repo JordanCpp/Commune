@@ -8,6 +8,9 @@ namespace Fallout
         class Script
         {
         public:
+            void MapUpdate();
+            void MapEnter();
+            void MapExit();
         private:
         };
     }

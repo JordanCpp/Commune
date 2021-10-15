@@ -1,5 +1,5 @@
-#ifndef _Common_XmlReader_hpp_
-#define _Common_XmlReader_hpp_
+#ifndef _Arcturus_Common_XmlReader_hpp_
+#define _Arcturus_Common_XmlReader_hpp_
 
 #include <string>
 #include <iostream>

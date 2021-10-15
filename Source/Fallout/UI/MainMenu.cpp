@@ -1,5 +1,6 @@
 #include "MainMenu.h"
 #include "UI.h"
+#include "../Formats/FrmReader.h"
 
 using namespace Fallout::UI;
 
@@ -23,6 +24,8 @@ MainMenu::MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* applicatio
 	this->Attach(exit);
 
 	exit->Click = std::bind(&MainMenu::ExitOn, this, std::placeholders::_1);
+
+	_Spr = new Formats::Sprite(factory->View(), "D:\\HANPWRAA.FRM");
 }
 
 void MainMenu::Draw()
@@ -31,6 +34,8 @@ void MainMenu::Draw()
 	{
 		Widgets()[i]->Draw();
 	}
+
+	_Spr->Draw(0, 0, Arc::Graphics::Point(100, 100));
 }
 
 void MainMenu::ExitOn(Arc::Graphics::Point pos)

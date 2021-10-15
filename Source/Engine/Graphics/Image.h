@@ -1,8 +1,9 @@
-#ifndef _Engine_Graphics_Image_h_
-#define _Engine_Graphics_Image_h_
+#ifndef _Arcturus_Graphics_Image_h_
+#define _Arcturus_Graphics_Image_h_
 
 #include "Canvas.h"
 #include <string>
+#include <vector>
 
 namespace Arc
 {
@@ -13,6 +14,7 @@ namespace Arc
         public:
             Image(Canvas* Source, Color transparency, const std::string& Name);
             Image(Canvas* CanvasSource, SDL_Surface* SurfaceCanvas);
+            Image(Canvas* canvas, Color transparency, size_t w, size_t h, const std::vector<Color>& data);
             ~Image();
             void Draw(Point Pt);
             void Draw(Point Pt, Point Sz);

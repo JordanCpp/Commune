@@ -1,5 +1,5 @@
-#ifndef _Engine_GUI_Form_h_
-#define _Engine_GUI_Form_h_
+#ifndef _Arcturus_GUI_Form_h_
+#define _Arcturus_GUI_Form_h_
 
 #include "Widget.h"
 

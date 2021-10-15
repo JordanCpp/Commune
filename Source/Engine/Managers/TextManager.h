@@ -1,5 +1,5 @@
-#ifndef _Managers_TextManager_h_
-#define _Managers_TextManager_h_
+#ifndef _Arcturus_Managers_TextManager_h_
+#define _Arcturus_Managers_TextManager_h_
 
 #include "FontManager.h"
 #include "../Graphics/Canvas.h"

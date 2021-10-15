@@ -1,5 +1,5 @@
-#ifndef _Common_XmlWriter_hpp
-#define _Common_XmlWriter_hpp
+#ifndef _Arcturus_Common_XmlWriter_hpp
+#define _Arcturus_Common_XmlWriter_hpp
 
 #include <string>
 #include <fstream>

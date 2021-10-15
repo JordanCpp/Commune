@@ -1,5 +1,5 @@
-#ifndef _Managers_XmlManager_h_
-#define _Managers_XmlManager_h_
+#ifndef _Arcturus_Managers_XmlManager_h_
+#define _Arcturus_Managers_XmlManager_h_
 
 #include "Manager.h"
 #include <unordered_map>

@@ -10,7 +10,12 @@ namespace Fallout
         class ProtoManager
         {
         public:
+            ProtoManager(const std::string& path);
+            Arc::Common::XmlReader* Proto(const std::string& dir, const std::string& file);
+            Arc::Common::XmlReader* Critter(const std::string& file);
+            Arc::Common::XmlReader* Tile(const std::string& file);
         private:
+            Arc::Managers::XmlManager _XmlManager;
         };
     }
 }

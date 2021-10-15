@@ -1,5 +1,5 @@
-#ifndef _Engine_Graphics_Point_h_
-#define _Engine_Graphics_Point_h_
+#ifndef _Arcturus_Graphics_Point_h_
+#define _Arcturus_Graphics_Point_h_
 
 #include <cstdint>
 #include "Point.h"

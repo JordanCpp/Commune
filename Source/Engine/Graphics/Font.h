@@ -1,5 +1,5 @@
-#ifndef _Engine_Graphics_Font_h_
-#define _Engine_Graphics_Font_h_
+#ifndef _Arcturus_Graphics_Font_h_
+#define _Arcturus_Graphics_Font_h_
 
 #include <string>
 #include <SDL2/SDL_ttf.h>

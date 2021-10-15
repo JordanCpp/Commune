@@ -1,5 +1,5 @@
-#ifndef _Managers_LanguageManager_h_
-#define _Managers_LanguageManager_h_
+#ifndef _Arcturus_Managers_LanguageManager_h_
+#define _Arcturus_Managers_LanguageManager_h_
 
 #include "Manager.h"
 #include "XmlManager.h"

@@ -2,8 +2,9 @@
 #include <cassert>
 
 using namespace Arc;
+using namespace Graphics;
 
-Graphics::Text::Text(Graphics::Canvas* CanvasSource, Graphics::Font* FontSource, const std::string& TextSource):
+Text::Text(Canvas* CanvasSource, Font* FontSource, const std::string& TextSource):
     _Image(nullptr)
 {
     SDL_Color color = { 0, 0, 0, 255 };
@@ -16,22 +17,22 @@ Graphics::Text::Text(Graphics::Canvas* CanvasSource, Graphics::Font* FontSource,
     //SDL_FreeSurface(surface);
 }
 
-Graphics::Text::~Text()
+Text::~Text()
 {
     delete _Image;
 }
 
-int Graphics::Text::Width()
+int Text::Width()
 {
     return _Image->Width();
 }
 
-int Graphics::Text::Height()
+int Text::Height()
 {
     return _Image->Height();
 }
 
-void Graphics::Text::Draw(Point Pt)
+void Text::Draw(Point Pt)
 {
     _Image->Draw(Pt);
 }
