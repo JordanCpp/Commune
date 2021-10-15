@@ -21,6 +21,8 @@ namespace Fallout
 			void Draw(size_t dir, Arc::Graphics::Point pos);
 			void Draw(Arc::Graphics::Point pos);
 		private:
+			size_t _Dirs;
+			size_t _Frames;
 			std::array<std::array<Arc::Graphics::Image*, MaxFarames>, MaxDirs> _Images;
 		};
 	}

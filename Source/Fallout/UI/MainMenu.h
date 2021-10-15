@@ -3,7 +3,7 @@
 
 #include "../../Engine/GUI/Factory.h"
 #include "../../Engine/Managers/ImageManager.h"
-#include "../Formats/Sprite.h"
+#include "../Managers/SpriteManager.h"
 
 namespace Fallout
 {
@@ -12,13 +12,13 @@ namespace Fallout
 		class MainMenu : public Arc::GUI::Form
 		{
 		public:
-			MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Arc::Managers::ImageManager* imageManager);
+			MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Managers::SpriteManager* _spriteManager);
 			void Draw();
 			void ExitOn(Arc::Graphics::Point pos);
 		private:
 			Arc::GUI::Factory* _Factory;
 			Arc::GUI::Application* _Application;
-			Arc::Managers::ImageManager* _ImageManager;
+			Managers::SpriteManager* _SpriteManager;
 			Arc::Graphics::Image* _Img;
 			Formats::Sprite* _Spr;
 		};

@@ -11,6 +11,7 @@
 #include "../Engine/Managers/XmlManager.h"
 #include "../Engine/Managers/LanguageManager.h"
 #include "../Engine/GUI/Factory.h"
+#include "Managers/SpriteManager.h"
 
 namespace Fallout
 {
@@ -25,7 +26,7 @@ namespace Fallout
 		Arc::Graphics::Camera _Camera;
 		Arc::Managers::FontManager _FontManager;
 		Arc::Managers::TextManager _TextManager;
-		Arc::Managers::ImageManager _ImageManager;
+		Managers::SpriteManager _SpriteManager;
 		Arc::Managers::XmlManager _XmlManager;
 		Arc::Managers::LanguageManager _LanguageManager;
 		Arc::GUI::Factory _Factory;

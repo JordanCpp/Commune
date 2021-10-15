@@ -323,6 +323,7 @@
     <None Include="Disciples\Text\Game.English" />
     <None Include="Disciples\Text\Game.Russian" />
     <None Include="Fallout.bat" />
+    <None Include="Fallout\Art\Critters\HANPWRAA.FRM" />
     <None Include="Fallout\Text\Game.English" />
     <None Include="Fallout\Text\Game.Russian" />
     <None Include="libfreetype-6.dll" />

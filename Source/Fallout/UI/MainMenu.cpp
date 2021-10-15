@@ -4,11 +4,11 @@
 
 using namespace Fallout::UI;
 
-MainMenu::MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Arc::Managers::ImageManager* imageManager):
+MainMenu::MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Managers::SpriteManager* _spriteManager):
 	Arc::GUI::Form(factory->View()),
 	_Factory(factory),
 	_Application(application),
-	_ImageManager(imageManager)
+	_SpriteManager(_spriteManager)
 {
 	factory->Language()->ActivateLang("Russian");
 	factory->Language()->ActivateFile("Game");
@@ -25,7 +25,7 @@ MainMenu::MainMenu(Arc::GUI::Factory* factory, Arc::GUI::Application* applicatio
 
 	exit->Click = std::bind(&MainMenu::ExitOn, this, std::placeholders::_1);
 
-	_Spr = new Formats::Sprite(factory->View(), "D:\\HANPWRAA.FRM");
+	_Spr = _SpriteManager->Critter("HANPWRAA.FRM");
 }
 
 void MainMenu::Draw()
@@ -35,7 +35,7 @@ void MainMenu::Draw()
 		Widgets()[i]->Draw();
 	}
 
-	_Spr->Draw(0, 0, Arc::Graphics::Point(100, 100));
+	_Spr->Draw(1, 0, Arc::Graphics::Point(100, 100));
 }
 
 void MainMenu::ExitOn(Arc::Graphics::Point pos)

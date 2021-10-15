@@ -474,6 +474,7 @@
     <None Include="Disciples\Text\Game.Russian" />
     <None Include="Fallout\Text\Game.English" />
     <None Include="Fallout\Text\Game.Russian" />
+    <None Include="Fallout\Art\Critters\HANPWRAA.FRM" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Disciples.xml" />

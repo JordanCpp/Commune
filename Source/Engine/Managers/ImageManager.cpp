@@ -18,6 +18,11 @@ ImageManager::~ImageManager()
 	}
 }
 
+Graphics::Canvas* ImageManager::Canvas()
+{
+    return _Canvas;
+}
+
 Graphics::Color Managers::ImageManager::Transparency()
 {
     return _Transparency;

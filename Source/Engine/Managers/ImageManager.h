@@ -14,6 +14,7 @@ namespace Arc
 		public:
 			ImageManager(const std::string& StartPath, Graphics::Canvas* CanvasSource, Graphics::Color transparencySource);
 			~ImageManager();
+			Graphics::Canvas* Canvas();
 			Graphics::Color Transparency();
 			Graphics::Image* GetImage(const std::string& DirName, const std::string& FileName);
 		private:

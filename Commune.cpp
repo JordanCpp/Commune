@@ -4,11 +4,6 @@
 
 int main(int argc, char* argv[])
 {
-
-	Fallout::Execute fallout("Fallout.xml");
-	fallout.Run();
-
-	/*
 	char* name = nullptr;
 
 	if (argc != 2)
@@ -34,7 +29,6 @@ int main(int argc, char* argv[])
 			std::cout << "Not found Game!" << '\n';
 		}
 	}
-	*/
 
 	return 0;
 }

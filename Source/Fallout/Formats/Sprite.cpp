@@ -1,9 +1,14 @@
 #include "Sprite.h"
 #include "../Formats/FrmReader.h"
 
-Fallout::Formats::Sprite::Sprite(Arc::Graphics::Canvas* canvas, const std::string& file)
+Fallout::Formats::Sprite::Sprite(Arc::Graphics::Canvas* canvas, const std::string& file):
+	_Dirs(0),
+	_Frames(0)
 {
 	Formats::FrmReader frm(file);
+
+	_Dirs = frm.Dirs();
+	_Frames = frm.Frames();
 
 	Formats::FrmFrame frame;
 
