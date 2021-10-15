@@ -169,6 +169,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Fallout\Managers\LanguageManager.cpp" />
     <ClCompile Include="Source\Fallout\UI\Editor.cpp" />
     <ClCompile Include="Source\Fallout\Formats\FrmReader.cpp" />
     <ClCompile Include="Source\Engine\Common\ByteReader.cpp" />
@@ -244,6 +245,7 @@
     <ClCompile Include="Source\Fallout\Managers\SpriteManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Fallout\Managers\LanguageManager.h" />
     <ClInclude Include="Source\Fallout\UI\Editor.h" />
     <ClInclude Include="Source\Fallout\Formats\FrmReader.h" />
     <ClInclude Include="Source\Engine\Common\ByteReader.hpp" />

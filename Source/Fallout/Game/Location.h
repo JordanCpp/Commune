@@ -1,8 +1,7 @@
 #ifndef _Fallout_Game_Location_h_
 #define _Fallout_Game_Location_h_
 
-#include <vector>
-#include "ScriptCritter.h"
+#include <array>
 
 namespace Fallout
 {
@@ -12,7 +11,6 @@ namespace Fallout
         {
         public:
         private:
-            std::vector<ScriptCritter*> _ScriptCritters;
         };
     }
 }

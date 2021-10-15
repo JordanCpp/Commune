@@ -13,6 +13,7 @@ namespace Fallout
         class ScriptCritter: public Script
         {
         public:
+            void Init(Critter* critter);
             Critter* Self();
         private:
             Critter* _Critter;

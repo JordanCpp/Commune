@@ -2,6 +2,7 @@
 #define _Fallout_Game_Tile_h_
 
 #include "../../Engine/Common/XmlReader.hpp"
+#include "../Managers/SpriteManager.h"
 
 namespace Fallout
 {
@@ -18,8 +19,9 @@ namespace Fallout
             };
 
         public:
-            Tile(Arc::Common::XmlReader* reader);
+            Tile(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader);
         private:
+            Formats::Sprite* _Body;
         };
     }
 }
