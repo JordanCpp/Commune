@@ -16,6 +16,8 @@ Canvas::Canvas(Point Size, size_t Fps, const std::string& Title):
         std::cout << "SDL_Init: " << SDL_GetError() << std::endl;
     }
 
+    SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");
+
     if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) 
     {
         std::cout << "IMG_Init: " << IMG_GetError() << std::endl;

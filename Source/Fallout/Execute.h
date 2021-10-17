@@ -12,6 +12,7 @@
 #include "../Engine/Managers/LanguageManager.h"
 #include "../Engine/GUI/Factory.h"
 #include "Managers/SpriteManager.h"
+#include "Tests/All.h"
 
 namespace Fallout
 {
@@ -21,7 +22,8 @@ namespace Fallout
 		Execute(const std::string& path);
 		void Run();
 	private:
-		Fallout::Game::Settings _Settings;
+		Tests::All _All;
+		Game::Settings _Settings;
 		Arc::Graphics::Canvas _Canvas;
 		Arc::Graphics::Camera _Camera;
 		Arc::Managers::FontManager _FontManager;

@@ -1,0 +1,14 @@
+<Critter>
+  <Parent>
+    <Name>Human.xml</Name>
+  </Parent>
+  <Stat>
+    <Agility>+3</Agility>
+  </Stat>
+  <Skill>
+    <Speech>+25%</Speech>
+  </Skill>
+  <View>
+    <Common>NewHuman</Common>
+  </View>
+</Critter>

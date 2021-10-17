@@ -4,12 +4,12 @@
 #include "Script.h"
 #include "Critter.h"
 
-class Critter;
-
 namespace Fallout
 {
     namespace Game
     {
+        class Critter;
+
         class ScriptCritter: public Script
         {
         public:

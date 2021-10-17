@@ -237,6 +237,21 @@
     <ClCompile Include="Source\Fallout\Managers\LanguageManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Fallout\Gameplay\StatValue.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fallout\Utils\Text.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fallout\Tests\StatValue.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fallout\Tests\All.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fallout\Tests\ProtoManager.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Disciples\Game\Location.h">
@@ -458,6 +473,21 @@
     <ClInclude Include="Source\Fallout\Managers\LanguageManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Fallout\Gameplay\StatValue.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Fallout\Utils\Text.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Fallout\Tests\StatValue.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Fallout\Tests\All.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Fallout\Tests\ProtoManager.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype-6.dll" />
@@ -486,6 +516,8 @@
     <Xml Include="Disciples.xml" />
     <Xml Include="Disciples\Prototypes\Units\Test.xml" />
     <Xml Include="Fallout.xml" />
+    <Xml Include="Fallout\Prototypes\Critters\Jack.xml" />
+    <Xml Include="Fallout\Prototypes\Critters\Parents\Human.xml" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="Fallout\Fonts\Crosterian.ttf" />

@@ -1,13 +1,15 @@
 #include "Script.h"
 
-void Fallout::Game::Script::MapUpdate()
+using namespace Fallout::Game;
+
+void Script::MapUpdate()
 {
 }
 
-void Fallout::Game::Script::MapEnter()
+void Script::MapEnter()
 {
 }
 
-void Fallout::Game::Script::MapExit()
+void Script::MapExit()
 {
 }

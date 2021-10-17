@@ -9,14 +9,18 @@ ObjectManager::ObjectManager(const std::string& path, SpriteManager* spriteManag
 {
 }
 
-Game::Tile* ObjectManager::Tile(const std::string& file)
+Game::Tile* ObjectManager::Tile(const std::string& protoFile)
 {
-	return new Game::Tile(_SpriteManager, _ProtoManager.Tile(file));
+	return new Game::Tile(_SpriteManager, _ProtoManager.Tile(protoFile));
 }
 
-Game::Critter* ObjectManager::Critter(const std::string& proto, const std::string& script)
+Game::Critter* ObjectManager::Critter(const std::string& protoFile, const std::string& scriptFile)
 {
-	Game::Critter* obj = new Game::Critter(_ProtoManager.Critter(proto));
+	Game::Critter* critter = new Game::Critter(protoFile, &_ProtoManager);
+	Game::ScriptCritter* script = _ScriptManager.Critter(scriptFile);
 
-	return obj;
+	critter->Init(script);
+	script->Init(critter);
+
+	return critter;
 }

@@ -1,0 +1,34 @@
+<Critter>
+  <Stat>
+    <Strength>5</Strength>
+    <Perception>5</Perception>
+    <Endurance>5</Endurance>
+    <Charisma>5</Charisma>
+    <Intelligence>5</Intelligence>
+    <Agility>5</Agility>
+    <Luck>5</Luck>
+  </Stat>
+  <Skill>
+    <SmallGuns>15</SmallGuns>
+    <BigGuns>15</BigGuns>
+    <EnergyWeapons>15</EnergyWeapons>
+    <Unarmed>15</Unarmed>
+    <MeleeWeapons>15</MeleeWeapons>
+    <Throwing>15</Throwing>
+    <FirstAid>15</FirstAid>
+    <Doctor>15</Doctor>
+    <Sneak>15</Sneak>
+    <Lockpick>15</Lockpick>
+    <Steal>15</Steal>
+    <Traps>15</Traps>
+    <Science>15</Science>
+    <Repair>15</Repair>
+    <Speech>30</Speech>
+    <Barter>15</Barter>
+    <Gambling>15</Gambling>
+    <Outdoorsman>15</Outdoorsman>
+  </Skill>
+  <View>
+    <Common>PowerArmor</Common>
+  </View>
+</Critter>

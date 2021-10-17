@@ -5,6 +5,7 @@
 #include "../Game/Critter.h"
 #include "ProtoManager.h"
 #include "SpriteManager.h"
+#include "ScriptManager.h"
 
 namespace Fallout
 {
@@ -14,10 +15,11 @@ namespace Fallout
         {
         public:
             ObjectManager(const std::string& path, SpriteManager* spriteManager);
-            Game::Tile* Tile(const std::string& file);
-            Game::Critter* Critter(const std::string& proto, const std::string& script);
+            Game::Tile* Tile(const std::string& protoFile);
+            Game::Critter* Critter(const std::string& protoFile, const std::string& scriptFile);
         private:
             ProtoManager _ProtoManager;
+            ScriptManager _ScriptManager;
             SpriteManager* _SpriteManager;
         };
     }

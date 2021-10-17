@@ -1,5 +1,6 @@
 #include "Text.h"
 #include <cassert>
+#include "..\..\Fallout\Utils\Text.h"
 
 using namespace Arc;
 using namespace Graphics;

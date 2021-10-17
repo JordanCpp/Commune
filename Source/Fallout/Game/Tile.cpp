@@ -1,8 +1,8 @@
 #include "Tile.h"
 
-using namespace Fallout;
+using namespace Fallout::Game;
 
-Game::Tile::Tile(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader):
+Tile::Tile(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader):
     _Body(nullptr)
 {
     xmlReader->NextOpening("Tile");
