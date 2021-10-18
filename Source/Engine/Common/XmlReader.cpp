@@ -205,7 +205,7 @@ bool XmlReader::NextOpening(const std::string & name)
 
     if (!result)
     {
-        std::cout << "Not found: <" <<  name << ">" << '\n';
+        std::cout << "Not found: <" << name << "> line:" << line << " tabs:" << tabs << '\n';
         std::terminate();
     }
 
@@ -225,7 +225,7 @@ bool XmlReader::NextClosing(const std::string & name)
 
     if (!result)
     {
-        std::cout << "Not found: </" <<  name << ">" << '\n';
+        std::cout << "Not found: </" << name << "> line:" << line << " tabs:" << tabs << '\n';
         std::terminate();
     }
 
@@ -245,7 +245,7 @@ bool XmlReader::NextValue()
 
     if (!result)
     {
-        std::cout << "Not found: Value" << '\n';
+        std::cout << "Not found: Value" << " line:" << line << " tabs:" << tabs << '\n';
         std::terminate();
     }
 
@@ -292,7 +292,7 @@ void XmlReader::AssertClosing(const std::string & name)
 {
     if (IsClosing(name) != true)
     {
-        std::cout << "Not found: </" << name << ">" << '\n';
+        std::cout << "Not found: </" << name << "> line:" << line << " tabs:" << tabs << '\n';
         std::terminate();
     }
 }
@@ -301,7 +301,7 @@ void XmlReader::AssertOpening(const std::string & name)
 {
     if (IsOpening(name) != true)
     {
-        std::cout << "Not found opening: <" << name << ">" << '\n';
+        std::cout << "Not found opening: <" << name << "> line:" << line << " tabs:" << tabs << '\n';
         std::terminate();
     }
 }

@@ -17,11 +17,15 @@ namespace Fallout
             size_t Fps();
             Arc::Graphics::Point WindowSize();
             const std::string& Title();
+            size_t SystemSize();
+            size_t GeneralSize();
         private:
             Arc::Graphics::Point size;
             size_t fps;
             std::string path;
             std::string title;
+            size_t _SystemSize;
+            size_t _GeneralSize;
         };
     }
 }

@@ -171,6 +171,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Engine\Allocators\LinearAllocator.cpp" />
     <ClCompile Include="Source\Fallout\Tests\ProtoManager.cpp" />
     <ClCompile Include="Source\Fallout\Tests\All.cpp" />
     <ClCompile Include="Source\Fallout\Managers\LanguageManager.cpp" />
@@ -252,6 +253,10 @@
     <ClCompile Include="Source\Fallout\Tests\StatValue.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Engine\Allocators\Allocator.h" />
+    <ClInclude Include="Source\Engine\Allocators\LinearAllocator.h" />
+    <ClInclude Include="Source\Fallout\Allocators\General.h" />
+    <ClInclude Include="Source\Fallout\Allocators\System.h" />
     <ClInclude Include="Source\Fallout\Tests\ProtoManager.h" />
     <ClInclude Include="Source\Fallout\Tests\All.h" />
     <ClInclude Include="Source\Fallout\Managers\LanguageManager.h" />

@@ -6,4 +6,8 @@
     <Fps>30</Fps>
   </Video>
   <Path>Fallout\</Path>
+  <Allocators>
+    <System>4</System>
+    <General>16</General>
+  </Allocators>
 </Config>

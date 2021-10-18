@@ -30,6 +30,16 @@ Settings::Settings(const std::string& Name):
     reader.NextNode("Path");
     path = reader.Value();
 
+    reader.NextOpening("Allocators");
+
+    reader.NextNode("System");
+    _SystemSize = reader.ValueInt();
+
+    reader.NextNode("General");
+    _GeneralSize = reader.ValueInt();
+
+    reader.NextClosing("Allocators");
+
     reader.NextClosing("Config");
 }
 
@@ -55,4 +65,14 @@ Arc::Graphics::Point Settings::WindowSize()
 const std::string& Settings::Title()
 {
     return title;
+}
+
+size_t Settings::SystemSize()
+{
+    return _SystemSize;
+}
+
+size_t Settings::GeneralSize()
+{
+    return _GeneralSize;
 }

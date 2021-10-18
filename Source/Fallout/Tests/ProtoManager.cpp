@@ -9,5 +9,9 @@ ProtoManager::ProtoManager()
 {
 	Managers::ProtoManager protoManager("Fallout\\");
 
-	assert(protoManager.Tile("Default.xml") != nullptr);
+	Arc::Common::XmlReader* xml = protoManager.Tile("Default.xml");
+
+	assert(xml != nullptr);
+
+	xml->NextOpening("Tile");
 }
