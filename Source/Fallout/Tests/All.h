@@ -3,6 +3,7 @@
 
 #include "StatValue.h"
 #include "ProtoManager.h"
+#include "MsgReader.h"
 
 namespace Fallout
 {
@@ -15,6 +16,7 @@ namespace Fallout
         private:
             StatValue _StatValue;
             ProtoManager _ProtoManager;
+            MsgReader _MsgReader;
         };
     }
 }

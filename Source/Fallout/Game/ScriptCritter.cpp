@@ -1,13 +1,17 @@
 #include "ScriptCritter.h"
 
-using namespace Fallout::Game;
+using namespace Fallout;
 
-void ScriptCritter::Init(Critter* critter)
+void Game::ScriptCritter::Talk(Dialog* dialog, size_t node)
+{
+}
+
+void Game::ScriptCritter::Init(Game::Critter* critter)
 {
 	_Critter = critter;
 }
 
-Critter* ScriptCritter::Self()
+Game::Critter* Game::ScriptCritter::Self()
 {
 	return _Critter;
 }

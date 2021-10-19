@@ -10,9 +10,16 @@ namespace Fallout
 		class MsgReader
 		{
 		public:
-			MsgReader();
+			MsgReader(const std::string& file);
+			char NextChar();
+			bool Eof();
+			bool Next();
+			const std::string& Content();
 		private:
+			size_t _Tabs;
+			size_t _Lines;
 			std::fstream _Input;
+			std::string _Content;
 		};
 	}
 }

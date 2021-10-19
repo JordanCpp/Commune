@@ -1,6 +1,7 @@
 #ifndef _Fallout_Managers_ObjectManager_h_
 #define _Fallout_Managers_ObjectManager_h_
 
+#include "../Game/Limits.h"
 #include "../Game/Tile.h"
 #include "../Game/Critter.h"
 #include "ProtoManager.h"
@@ -21,6 +22,10 @@ namespace Fallout
             ProtoManager _ProtoManager;
             ScriptManager _ScriptManager;
             SpriteManager* _SpriteManager;
+            std::array<Game::Tile, Limits::MaxTiles> _Tiles;
+            std::array<Game::Critter, Limits::MaxCritters> _Critters;
+            size_t _TileIndex;
+            size_t _CritterIndex;
         };
     }
 }

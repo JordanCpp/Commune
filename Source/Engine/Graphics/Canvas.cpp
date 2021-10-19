@@ -131,8 +131,13 @@ void Canvas::DrawRect(Rect Rt, Color Cr)
   SDL_RenderDrawRect(_Render, &Rectangle);
 }
 
-void Graphics::Canvas::DrawLine(Point first, Point last, Color color)
+void Canvas::DrawLine(Point first, Point last, Color color)
 {
     SDL_SetRenderDrawColor(_Render, color.Red(), color.Green(), color.Blue(), color.Alpha());
     SDL_RenderDrawLine(_Render, first.PosX(), first.PosY(), last.PosX(), last.PosY());
+}
+
+void Canvas::Title(const std::string& title)
+{
+    SDL_SetWindowTitle(_Window, title.c_str());
 }

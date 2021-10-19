@@ -10,6 +10,7 @@ namespace Fallout
         class Tester: public ScriptCritter
         {
         public:
+            void Talk(UI::Dialog* dialog, size_t node);
             void MapEnter();
         private:
         };

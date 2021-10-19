@@ -12,7 +12,8 @@ namespace Fallout
 			{
 				MainMenu,
 				Editor,
-				Settings
+				Settings,
+				Dialog
 			};
 		};
 	}

@@ -13,6 +13,7 @@
 #include "../Engine/GUI/Factory.h"
 #include "Managers/SpriteManager.h"
 #include "Tests/All.h"
+#include "Managers/MsgManager.h"
 
 namespace Fallout
 {
@@ -26,13 +27,14 @@ namespace Fallout
 		Game::Settings _Settings;
 		Arc::Graphics::Canvas _Canvas;
 		Arc::Graphics::Camera _Camera;
+		Managers::MsgManager _MsgManager;
 		Arc::Managers::FontManager _FontManager;
 		Arc::Managers::TextManager _TextManager;
 		Managers::SpriteManager _SpriteManager;
 		Arc::Managers::XmlManager _XmlManager;
 		Arc::Managers::LanguageManager _LanguageManager;
 		Arc::GUI::Factory _Factory;
-		Arc::GUI::Application* _Application;
+		Arc::GUI::Application _Application;
 	};
 }
 

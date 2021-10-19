@@ -19,9 +19,9 @@ namespace Fallout
             };
 
         public:
-            Tile(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader);
+            void Init(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader);
         private:
-            Formats::Sprite* _Body;
+            Formats::Sprite* _Body = nullptr;
         };
     }
 }

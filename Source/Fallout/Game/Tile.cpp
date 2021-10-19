@@ -2,8 +2,7 @@
 
 using namespace Fallout::Game;
 
-Tile::Tile(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader):
-    _Body(nullptr)
+void Tile::Init(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader)
 {
     xmlReader->NextOpening("Tile");
 

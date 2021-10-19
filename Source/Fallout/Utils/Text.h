@@ -12,6 +12,7 @@ namespace Fallout
         public:
             bool ContainsPercent(const std::string& value);
             int ParsePercent(const std::string& value);
+            bool IsInt(const std::string& value);
         private:
         };
     }

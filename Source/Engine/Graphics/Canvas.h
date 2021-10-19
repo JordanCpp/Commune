@@ -25,6 +25,7 @@ namespace Arc
             void FillRect(Rect& Rt, Color Cr);
             void DrawRect(Rect Rt, Color Cr);
             void DrawLine(Point first, Point last, Color color);
+            void Title(const std::string & title);
         private:
             bool _Running;
             SDL_Renderer* _Render;

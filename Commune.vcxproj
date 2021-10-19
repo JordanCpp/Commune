@@ -171,6 +171,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Fallout\Game\Scenery.cpp" />
+    <ClCompile Include="Source\Fallout\UI\Dialog.cpp" />
+    <ClCompile Include="Source\Fallout\Tests\MsgReader.cpp" />
+    <ClCompile Include="Source\Fallout\Formats\MsgFile.cpp" />
+    <ClCompile Include="Source\Fallout\Managers\MsgManager.cpp" />
     <ClCompile Include="Source\Engine\Allocators\LinearAllocator.cpp" />
     <ClCompile Include="Source\Fallout\Tests\ProtoManager.cpp" />
     <ClCompile Include="Source\Fallout\Tests\All.cpp" />
@@ -251,8 +256,15 @@
     <ClCompile Include="Source\Fallout\Gameplay\StatValue.cpp" />
     <ClCompile Include="Source\Fallout\Utils\Text.cpp" />
     <ClCompile Include="Source\Fallout\Tests\StatValue.cpp" />
+    <ClCompile Include="Source\Fallout\Game\Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Fallout\Game\Scenery.h" />
+    <ClInclude Include="Source\Fallout\Game\Limits.h" />
+    <ClInclude Include="Source\Fallout\UI\Dialog.h" />
+    <ClInclude Include="Source\Fallout\Tests\MsgReader.h" />
+    <ClInclude Include="Source\Fallout\Formats\MsgFile.h" />
+    <ClInclude Include="Source\Fallout\Managers\MsgManager.h" />
     <ClInclude Include="Source\Engine\Allocators\Allocator.h" />
     <ClInclude Include="Source\Engine\Allocators\LinearAllocator.h" />
     <ClInclude Include="Source\Fallout\Allocators\General.h" />
@@ -335,6 +347,7 @@
     <ClInclude Include="Source\Fallout\Gameplay\StatValue.h" />
     <ClInclude Include="Source\Fallout\Utils\Text.h" />
     <ClInclude Include="Source\Fallout\Tests\StatValue.h" />
+    <ClInclude Include="Source\Fallout\Game\Wall.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />

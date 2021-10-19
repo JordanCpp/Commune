@@ -27,3 +27,21 @@ int Text::ParsePercent(const std::string& value)
 
     return std::stoi(value);
 }
+
+bool Text::IsInt(const std::string& value)
+{
+    if (value.size() == 0)
+    {
+        return false;
+    }
+
+    for (size_t i = 0; i < value.size(); i++)
+    {
+        if (!isdigit(value[i]))
+        {
+            return false;
+        }
+    }
+
+    return true;
+}

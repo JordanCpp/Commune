@@ -3,6 +3,8 @@
 
 #include <new>
 #include <vector>
+#include <string>
+#include <unordered_map>
 #include "../../Engine/Allocators/LinearAllocator.h"
 
 extern Arc::Allocators::LinearAllocator* _General;
@@ -39,7 +41,10 @@ namespace Fallout
         template <class T>
         using Vector = std::vector<T, General<T>>;
 
-        using String = std::basic_string<General<char>>;
+        template <class _Kty, class _Ty>
+        using UnorderedMap = std::unordered_map<_Kty, _Ty, std::hash<_Kty>, std::equal_to<_Kty>, General<std::pair<const _Kty, _Ty>>>;
+
+        using String = std::basic_string<char, std::char_traits<char>, General<char>>;
     }
 }
 

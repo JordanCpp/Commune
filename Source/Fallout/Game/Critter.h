@@ -15,14 +15,14 @@ namespace Fallout
         class Critter
         {
         public:
-            Critter(const std::string& protoFile, Managers::ProtoManager* protoManager);
+            void Init(const std::string& protoFile, Managers::ProtoManager* protoManager);
             void ReadParent(Arc::Common::XmlReader* reader);
             void ReadStat(Arc::Common::XmlReader* reader, size_t stat, const std::string& name);
             void Init(ScriptCritter* script);
             ScriptCritter* Self();
             Gameplay::Stat& Stat();
         private:
-            ScriptCritter* _Script;
+            ScriptCritter* _Script = nullptr;
             Gameplay::Stat _Stat;
         };
     }
