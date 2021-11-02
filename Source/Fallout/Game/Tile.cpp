@@ -1,8 +1,8 @@
 #include "Tile.h"
 
-using namespace Fallout::Game;
+using namespace Fallout;
 
-void Tile::Init(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader)
+Game::Tile::Tile(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader)
 {
     xmlReader->NextOpening("Tile");
 
@@ -11,4 +11,9 @@ void Tile::Init(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* 
     _Body = spriteManager->Tile(xmlReader->Value());
 
     xmlReader->NextClosing("Tile");
+}
+
+void Game::Tile::Draw(Arc::Graphics::Point pos)
+{
+    _Body->Draw(pos);
 }

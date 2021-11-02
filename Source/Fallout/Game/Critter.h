@@ -15,7 +15,7 @@ namespace Fallout
         class Critter
         {
         public:
-            void Init(const std::string& protoFile, Managers::ProtoManager* protoManager);
+            Critter(const std::string& protoFile, Managers::ProtoManager* protoManager);
             void ReadParent(Arc::Common::XmlReader* reader);
             void ReadStat(Arc::Common::XmlReader* reader, size_t stat, const std::string& name);
             void Init(ScriptCritter* script);

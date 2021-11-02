@@ -8,6 +8,7 @@ namespace Fallout
         enum
         {
             MaxTiles = 300 * 300,
+            MaxHexes = MaxTiles * 4,
             MaxCritters = 1024,
             MaxScripts = 4096
         };

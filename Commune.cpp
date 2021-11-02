@@ -1,6 +1,6 @@
-#include <cassert>
 #include "Source/Disciples/Execute.h"
 #include "Source/Fallout/Execute.h"
+#include "Source/Arcanum/Execute.h"
 
 int main(int argc, char* argv[])
 {
@@ -24,11 +24,16 @@ int main(int argc, char* argv[])
 			Fallout::Execute fallout("Fallout.xml");
 			fallout.Run();
 		}
+		else if (strcmp(name, "Arcanum") == 0)
+		{
+			Arcanum::Execute arcanum("Arcanum.xml");
+			arcanum.Run();
+		}
 		else
 		{
 			std::cout << "Not found Game!" << '\n';
 		}
 	}
-
+	
 	return 0;
 }

@@ -204,7 +204,7 @@
     <ClCompile Include="Source\Engine\GUI\Application.cpp" />
     <ClCompile Include="Source\Engine\GUI\Button.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Animation.cpp" />
-    <ClCompile Include="Source\Arcanum\Arcanum.cpp" />
+    <ClCompile Include="Source\Arcanum\Execute.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Camera.cpp" />
     <ClCompile Include="Source\Disciples\Execute.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Canvas.cpp" />
@@ -296,7 +296,7 @@
     <ClInclude Include="Source\Engine\GUI\Application.h" />
     <ClInclude Include="Source\Engine\GUI\Button.h" />
     <ClInclude Include="Source\Engine\Graphics\Animation.h" />
-    <ClInclude Include="Source\Arcanum\Arcanum.h" />
+    <ClInclude Include="Source\Arcanum\Execute.h" />
     <ClInclude Include="Source\Engine\Graphics\Camera.h" />
     <ClInclude Include="Source\Disciples\Execute.h" />
     <ClInclude Include="Source\Engine\Graphics\Canvas.h" />

@@ -2,7 +2,7 @@
 
 using namespace Fallout;
 
-void Game::Critter::Init(const std::string& protoFile, Managers::ProtoManager* protoManager)
+Game::Critter::Critter(const std::string& protoFile, Managers::ProtoManager* protoManager)
 {
 	auto base = protoManager->Critter(protoFile);
 

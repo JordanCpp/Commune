@@ -2,9 +2,18 @@
 
 using namespace Fallout;
 
-UI::Dialog::Dialog(ScriptCritter* script):
-	_Script(script)
+UI::Dialog::Dialog(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Managers::SpriteManager* spriteManager) :
+	Arc::GUI::Form(factory->View()),
+	_Factory(factory),
+	_Application(application),
+	_SpriteManager(spriteManager),
+	_Script(nullptr)
 {
+}
+
+void UI::Dialog::Init(ScriptCritter* script)
+{
+	_Script = script;
 }
 
 void UI::Dialog::Clear()

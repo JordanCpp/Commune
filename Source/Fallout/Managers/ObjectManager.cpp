@@ -4,34 +4,30 @@
 using namespace Fallout;
 using namespace Managers;
 
-ObjectManager::ObjectManager(const std::string& path, SpriteManager* spriteManager):
+ObjectManager::ObjectManager(const std::string& path, Arc::Allocators::Allocator* allocator, SpriteManager* spriteManager):
+	_Allocator(allocator),
 	_ProtoManager(path),
-	_SpriteManager(spriteManager),
-	_TileIndex(0),
-	_CritterIndex(0)
+	_SpriteManager(spriteManager)
 {
 }
 
 Game::Tile* ObjectManager::Tile(const std::string& protoFile)
 {
-	assert(_TileIndex < Limits::MaxTiles);
-
-	Game::Tile* tile = new (&_Tiles[_TileIndex]) Game::Tile();
-	_TileIndex++;
-
-	tile->Init(_SpriteManager, _ProtoManager.Tile(protoFile));
+	Game::Tile* tile = new(_Allocator->Alloc(sizeof(Game::Tile))) Game::Tile(_SpriteManager, _ProtoManager.Tile(protoFile));
 
 	return tile;
 }
 
+Game::Hex* ObjectManager::Hex(const std::string& protoFile)
+{
+	Game::Hex* hex = new (_Allocator->Alloc(sizeof(Game::Hex))) Game::Hex(_SpriteManager, _ProtoManager.Tile(protoFile));
+
+	return hex;
+}
+
 Game::Critter* ObjectManager::Critter(const std::string& protoFile, const std::string& scriptFile)
 {
-	assert(_CritterIndex < Limits::MaxCritters);
-
-	Game::Critter* critter = new(&_Tiles[_CritterIndex]) Game::Critter();
-	critter->Init(protoFile, &_ProtoManager);
-	_CritterIndex++;
-
+	Game::Critter* critter = new (_Allocator->Alloc(sizeof(Game::Critter))) Game::Critter(protoFile, &_ProtoManager);
 	Game::ScriptCritter* script = _ScriptManager.Critter(scriptFile);
 
 	critter->Init(script);

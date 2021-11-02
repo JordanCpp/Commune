@@ -334,7 +334,7 @@ bool Fallout::Formats::FrmReader::Next(FrmFrame& frame)
     {
         uint8_t index = _Reader.u8();
 
-        uint8_t mode = 4;
+        uint8_t mode = 6;
 
         uint8_t r = colors[index].red * mode;
         uint8_t g = colors[index].green * mode;

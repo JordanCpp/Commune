@@ -69,7 +69,7 @@
     <ClCompile Include="Source\Disciples\Execute.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Arcanum\Arcanum.cpp">
+    <ClCompile Include="Source\Arcanum\Execute.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Source\Engine\Graphics\Canvas.cpp">
@@ -326,7 +326,7 @@
     <ClInclude Include="Source\Disciples\Execute.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Arcanum\Arcanum.h">
+    <ClInclude Include="Source\Arcanum\Execute.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Source\Engine\Graphics\Canvas.h">

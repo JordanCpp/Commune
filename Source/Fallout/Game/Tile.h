@@ -10,6 +10,7 @@ namespace Fallout
     {
         class Tile
         {
+        public:
             enum
             {
                 RatioX = 16,
@@ -18,8 +19,8 @@ namespace Fallout
                 Height = 3 * RatioY
             };
 
-        public:
-            void Init(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader);
+            Tile(Managers::SpriteManager* spriteManager, Arc::Common::XmlReader* xmlReader);
+            void Draw(Arc::Graphics::Point pos);
         private:
             Formats::Sprite* _Body = nullptr;
         };
