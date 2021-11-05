@@ -171,6 +171,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Engine\Graphics\Canvas3D.cpp" />
     <ClCompile Include="Source\Fallout\Gameplay\Global.cpp" />
     <ClCompile Include="Source\Fallout\Game\Scenery.cpp" />
     <ClCompile Include="Source\Fallout\UI\Dialog.cpp" />
@@ -261,6 +262,7 @@
     <ClCompile Include="Source\Engine\GUI\ToggleButton.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Engine\Graphics\Canvas3D.h" />
     <ClInclude Include="Source\Fallout\Gameplay\Global.h" />
     <ClInclude Include="Source\Fallout\Game\Scenery.h" />
     <ClInclude Include="Source\Fallout\Game\Limits.h" />
