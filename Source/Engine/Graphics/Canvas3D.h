@@ -12,6 +12,7 @@ namespace Arc
         {
         public:
             Canvas3D(Arc::Graphics::Point size, size_t fps);
+            ~Canvas3D();
             bool GetEvent(SDL_Event& Dest);
             size_t Width();
             size_t Height();

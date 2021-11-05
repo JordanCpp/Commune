@@ -40,6 +40,13 @@ bool Canvas3D::GetEvent(SDL_Event& Dest)
     return _Running;
 }
 
+Canvas3D::~Canvas3D()
+{
+    SDL_GL_DeleteContext(_Context);
+    SDL_DestroyWindow(_Window);
+    SDL_Quit();
+}
+
 size_t Canvas3D::Width()
 {
     return _Size.PosX();

@@ -1,5 +1,9 @@
 #include "Execute.h"
+
+namespace GL
+{
 #include <SDL2/SDL_opengl.h>
+}
 
 using namespace Arcanum;
 
@@ -14,8 +18,8 @@ void Execute::Run()
 
 	while (_Canvas.GetEvent(report))
 	{
-		glViewport(0, 0, _Canvas.Width(), _Canvas.Height());
-		glClearColor(1.f, 0.f, 1.f, 0.f);
-		glClear(GL_COLOR_BUFFER_BIT);
+		GL::glViewport(0, 0, _Canvas.Width(), _Canvas.Height());
+		GL::glClearColor(1.f, 0.f, 1.f, 0.f);
+		GL::glClear(GL_COLOR_BUFFER_BIT);
 	}
 }
