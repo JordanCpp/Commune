@@ -13,6 +13,7 @@ namespace Arc
         public:
             Texture2D(const std::string& path);
             ~Texture2D();
+            void Draw();
         private:
             GL::GLuint _Id;
             int _Width;

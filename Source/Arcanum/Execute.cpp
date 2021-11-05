@@ -8,7 +8,7 @@ namespace GL
 using namespace Arcanum;
 
 Execute::Execute(const std::string& path):
-	_Canvas(Arc::Graphics::Point(1366, 768), 60)
+	_Canvas(Arc::Graphics::Point(1366, 768), 9999)
 {
 }
 

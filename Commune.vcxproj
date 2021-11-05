@@ -261,6 +261,7 @@
     <ClCompile Include="Source\Fallout\Game\Wall.cpp" />
     <ClCompile Include="Source\Engine\GUI\ToggleButton.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Texture2D.cpp" />
+    <ClCompile Include="Source\Engine\Managers\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine\Formats\StbImage.h" />
@@ -359,6 +360,7 @@
     <ClInclude Include="Source\Fallout\Game\Wall.h" />
     <ClInclude Include="Source\Engine\GUI\ToggleButton.h" />
     <ClInclude Include="Source\Engine\Graphics\Texture2D.h" />
+    <ClInclude Include="Source\Engine\Managers\TextureManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />
@@ -389,6 +391,9 @@
   <ItemGroup>
     <Font Include="Disciples\Fonts\Crosterian.ttf" />
     <Font Include="Fallout\Fonts\Crosterian.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\grass256.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -26,3 +26,8 @@ Texture2D::~Texture2D()
 	StbImage::stbi_image_free(_Image);
 	GL::glDeleteTextures(1, &_Id);
 }
+
+void Texture2D::Draw()
+{
+	GL::glBindTexture(GL_TEXTURE_2D, _Id);
+}
