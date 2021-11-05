@@ -282,6 +282,9 @@
     <ClCompile Include="Source\Engine\Graphics\Canvas3D.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Engine\Graphics\Texture2D.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Disciples\Game\Location.h">
@@ -558,6 +561,18 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Source\Engine\Graphics\Canvas3D.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Formats\stb_image.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Graphics\Texture2D.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Formats\StbImage.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Graphics\OpenGL.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

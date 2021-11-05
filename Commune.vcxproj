@@ -260,9 +260,13 @@
     <ClCompile Include="Source\Fallout\Tests\StatValue.cpp" />
     <ClCompile Include="Source\Fallout\Game\Wall.cpp" />
     <ClCompile Include="Source\Engine\GUI\ToggleButton.cpp" />
+    <ClCompile Include="Source\Engine\Graphics\Texture2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Engine\Formats\StbImage.h" />
+    <ClInclude Include="Source\Engine\Formats\stb_image.h" />
     <ClInclude Include="Source\Engine\Graphics\Canvas3D.h" />
+    <ClInclude Include="Source\Engine\Graphics\OpenGL.h" />
     <ClInclude Include="Source\Fallout\Gameplay\Global.h" />
     <ClInclude Include="Source\Fallout\Game\Scenery.h" />
     <ClInclude Include="Source\Fallout\Game\Limits.h" />
@@ -354,6 +358,7 @@
     <ClInclude Include="Source\Fallout\Tests\StatValue.h" />
     <ClInclude Include="Source\Fallout\Game\Wall.h" />
     <ClInclude Include="Source\Engine\GUI\ToggleButton.h" />
+    <ClInclude Include="Source\Engine\Graphics\Texture2D.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />

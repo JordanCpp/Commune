@@ -1,4 +1,5 @@
 #include "Canvas3D.h"
+#include <iostream>
 
 using namespace Arc::Graphics;
 
@@ -7,7 +8,17 @@ Canvas3D::Canvas3D(Point size, size_t fps):
     _Running(true),
     _Fps(fps)
 {
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
+    {
+        std::cout << "SDL_Init: " << SDL_GetError() << std::endl;
+    }
+
 	_Window = SDL_CreateWindow("OpenGL Test", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, size.PosX(), size.PosY(), SDL_WINDOW_OPENGL);
+
+    if (_Window == nullptr)
+    {
+        std::cout << "SDL_CreateWindow: " << SDL_GetError() << std::endl;
+    }
 
 	_Context = SDL_GL_CreateContext(_Window);
 }
