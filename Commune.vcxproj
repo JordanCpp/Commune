@@ -171,6 +171,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Fallout\Gameplay\Global.cpp" />
     <ClCompile Include="Source\Fallout\Game\Scenery.cpp" />
     <ClCompile Include="Source\Fallout\UI\Dialog.cpp" />
     <ClCompile Include="Source\Fallout\Tests\MsgReader.cpp" />
@@ -257,8 +258,10 @@
     <ClCompile Include="Source\Fallout\Utils\Text.cpp" />
     <ClCompile Include="Source\Fallout\Tests\StatValue.cpp" />
     <ClCompile Include="Source\Fallout\Game\Wall.cpp" />
+    <ClCompile Include="Source\Engine\GUI\ToggleButton.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Fallout\Gameplay\Global.h" />
     <ClInclude Include="Source\Fallout\Game\Scenery.h" />
     <ClInclude Include="Source\Fallout\Game\Limits.h" />
     <ClInclude Include="Source\Fallout\UI\Dialog.h" />
@@ -348,6 +351,7 @@
     <ClInclude Include="Source\Fallout\Utils\Text.h" />
     <ClInclude Include="Source\Fallout\Tests\StatValue.h" />
     <ClInclude Include="Source\Fallout\Game\Wall.h" />
+    <ClInclude Include="Source\Engine\GUI\ToggleButton.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Commune.exe" />

@@ -23,7 +23,7 @@ Canvas::Canvas(Point Size, size_t Fps, const std::string& Title):
         std::cout << "IMG_Init: " << IMG_GetError() << std::endl;
     }
 
-    _Window = SDL_CreateWindow(Title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, _Size.PosX(), _Size.PosY(), 0);
+    _Window = SDL_CreateWindow(Title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, _Size.PosX(), _Size.PosY(), SDL_WINDOW_OPENGL);
 
     if (_Window == nullptr)
     {

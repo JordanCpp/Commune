@@ -5,7 +5,6 @@
 
 namespace Arcanum
 {
-
 	class Execute
 	{
 	public:

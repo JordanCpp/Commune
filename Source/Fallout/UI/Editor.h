@@ -17,6 +17,7 @@ namespace Fallout
 			Editor(Arc::GUI::Factory* factory, Arc::GUI::Application* application, Arc::Graphics::Camera* camera, Managers::SpriteManager* spriteManager, Managers::ObjectManager* objectManager);
 			void KeyboardEvent(size_t key);
 			void Draw();
+			void ClickOn(Arc::Graphics::Point pos);
 		private:
 			Arc::GUI::Factory* _Factory;
 			Arc::GUI::Application* _Application;

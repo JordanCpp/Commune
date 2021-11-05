@@ -5,8 +5,11 @@ using namespace Fallout;
 Game::Location::Location(Arc::Graphics::Camera* camera, Managers::ObjectManager* objectManager):
 	_Camera(camera),
 	_ObjectManager(objectManager),
-	_Size(300)
+	_Size(10)
 {
+	_Tiles.resize(Limits::MaxTiles);
+	_Hexes.resize(Limits::MaxHexes);
+
 	for (size_t i = 0; i < Size() * Size(); i++)
 	{
 		_Tiles[i] = _ObjectManager->Tile("cav4017.xml");
@@ -53,6 +56,17 @@ int Game::Location::HexToPosY(int t)
 	int ty = t / (Size() * 2);
 
 	return Game::Tile::RatioY * (ty + tx - tx / 2) - 32;
+}
+
+int Game::Location::PosToTile(int x, int y)
+{
+	x -= 8;
+	y += 20;
+
+	int tx = (x - 4 * y / 3) / 64;
+	int ty = (x + 4 * y) / 128;
+
+	return ty * Size() - tx;
 }
 
 void Game::Location::Hexes()

@@ -86,3 +86,12 @@ Picture* Factory::NewPicture(Graphics::Point pos, Graphics::Point size, Graphics
 
 	return ptr;
 }
+
+ToggleButton* Factory::NewToggleButton(Graphics::Point pos, Graphics::Point size, const std::string& caption)
+{
+	ToggleButton* ptr = new ToggleButton(_Canvas, _TextManager, pos, size, caption);
+
+	_Widgets.push_back(ptr);
+
+	return ptr;
+}

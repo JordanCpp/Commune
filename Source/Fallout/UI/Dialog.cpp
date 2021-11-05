@@ -18,6 +18,7 @@ void UI::Dialog::Init(ScriptCritter* script)
 
 void UI::Dialog::Clear()
 {
+	_Reply.clear();
 	_Options.clear();
 }
 
@@ -28,8 +29,6 @@ void UI::Dialog::Reply(const std::string& text)
 
 void UI::Dialog::Option(const std::string& text, size_t node)
 {
-	_Option.Value.clear();
-	
 	_Option.Value  = text;
 	_Option.Node   = node;
 

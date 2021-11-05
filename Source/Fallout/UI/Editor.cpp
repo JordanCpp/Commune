@@ -12,6 +12,7 @@ UI::Editor::Editor(Arc::GUI::Factory* factory, Arc::GUI::Application* applicatio
 {
 
 	this->Keyboard = std::bind(&Editor::KeyboardEvent, this, std::placeholders::_1);
+	this->Click = std::bind(&Editor::ClickOn, this, std::placeholders::_1);
 }
 
 void UI::Editor::KeyboardEvent(size_t key)
@@ -34,4 +35,9 @@ void UI::Editor::KeyboardEvent(size_t key)
 void UI::Editor::Draw()
 {
 	_Location.Draw();
+}
+
+void UI::Editor::ClickOn(Arc::Graphics::Point pos)
+{
+	printf("index: %d\n", _Location.PosToTile(pos.PosX() - _Camera->PosX(), pos.PosY() - _Camera->PosY()));
 }

@@ -8,6 +8,7 @@
 #include "Label.h"
 #include "Window.h"
 #include "Picture.h"
+#include "ToggleButton.h"
 
 namespace Arc
 {
@@ -27,6 +28,7 @@ namespace Arc
 			Label* NewLabel(Graphics::Point pos, Graphics::Point size, const std::string& caption);
 			Window* NewWindow(Graphics::Point pos, Graphics::Point size);
 			Picture* NewPicture(Graphics::Point pos, Graphics::Point size, Graphics::Image* image);
+			ToggleButton* NewToggleButton(Graphics::Point pos, Graphics::Point size, const std::string& caption);
 		private:
 			Graphics::Canvas* _Canvas;
 			Managers::TextManager* _TextManager;

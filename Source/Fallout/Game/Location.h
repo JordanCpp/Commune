@@ -17,14 +17,15 @@ namespace Fallout
             int IndexToPosY(int t);
             int HexToPosX(int t);
             int HexToPosY(int t);
+            int PosToTile(int x, int y);
             void Hexes();
             void Tiles();
             void Draw();
         private:
             Arc::Graphics::Camera* _Camera;
             Managers::ObjectManager* _ObjectManager;
-            std::array<Game::Tile*, Limits::MaxTiles> _Tiles;
-            std::array<Game::Hex*, Limits::MaxHexes> _Hexes;
+            std::vector<Game::Tile*> _Tiles;
+            std::vector<Game::Hex*> _Hexes;
             size_t _Size;
         };
     }
